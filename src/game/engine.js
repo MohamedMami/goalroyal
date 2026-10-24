@@ -44,13 +44,13 @@ export class GameEngine {
     };
   }
 
-  notify() {
-    this.listeners.forEach((cb) => cb(this.state));
+  notify(event = { type: 'state_change' }) {
+    this.listeners.forEach((cb) => cb(this.state, event));
   }
 
   updateConfig(partial) {
     this.state.config = { ...this.state.config, ...partial };
-    this.notify();
+    this.notify({ type: 'config_change' });
   }
 
   startMatch() {
@@ -129,9 +129,23 @@ export class GameEngine {
       if (this.state.match.timeLeft <= 0) {
         this.handleTimeout();
       } else {
-        this.notify();
+        this.notify({ type: 'timer_tick' });
       }
     }, 1000);
+  }
+
+  pauseTimer() {
+    if (this.state.match) {
+      this.state.match.timerRunning = false;
+      this.notify({ type: 'timer_paused' });
+    }
+  }
+
+  resumeTimer() {
+    if (this.state.match && this.state.match.timerSec > 0 && !this.state.match.winner) {
+      this.state.match.timerRunning = true;
+      this.notify({ type: 'timer_resumed' });
+    }
   }
 
   clearTimer() {

@@ -20,11 +20,28 @@ class GoalRoyaleApp {
   }
 
   init() {
-    game.subscribe((state) => {
+    game.subscribe((state, event) => {
+      if (event && (event.type === 'timer_tick' || event.type === 'timer_paused' || event.type === 'timer_resumed')) {
+        this.updateTimerDisplay(state);
+        return;
+      }
       this.render(state);
     });
 
     this.render(game.state);
+  }
+
+  updateTimerDisplay(state) {
+    const timerBadge = document.querySelector('.timer-seconds-badge');
+    if (timerBadge && state.match) {
+      if (!state.match.timerRunning && state.match.timerSec > 0) {
+        timerBadge.textContent = `${state.match.timeLeft}s ⏸️`;
+        timerBadge.classList.remove('urgent');
+      } else {
+        timerBadge.textContent = `${state.match.timeLeft}s`;
+        timerBadge.classList.toggle('urgent', state.match.timeLeft <= 5);
+      }
+    }
   }
 
   render(state) {
@@ -518,12 +535,18 @@ class GoalRoyaleApp {
 
       dropdown.style.display = 'flex';
 
-      // Click to pick
+      // Click or touch to pick suggestion
       dropdown.querySelectorAll('.autocomplete-item').forEach((item) => {
-        item.addEventListener('click', () => {
+        const selectHandler = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
           const idx = parseInt(item.dataset.idx, 10);
-          this.pickSuggestion(this.currentSuggestions[idx]);
-        });
+          if (this.currentSuggestions[idx]) {
+            this.pickSuggestion(this.currentSuggestions[idx]);
+          }
+        };
+        item.addEventListener('mousedown', selectHandler);
+        item.addEventListener('click', selectHandler);
       });
     });
 
@@ -588,6 +611,14 @@ class GoalRoyaleApp {
 
   pickSuggestion(playerObj) {
     if (!playerObj) return;
+
+    // Reset search bar and dropdown immediately
+    const searchInput = document.getElementById('player-search-input');
+    const dropdown = document.getElementById('autocomplete-dropdown');
+    if (searchInput) searchInput.value = '';
+    if (dropdown) dropdown.style.display = 'none';
+    this.currentSuggestions = [];
+    this.selectedAutocompleteIndex = -1;
 
     // Trigger screen shake on big goals (> 100)
     if (playerObj.goals >= 100) {
@@ -673,6 +704,9 @@ class GoalRoyaleApp {
      MODALS
      ========================================================================== */
   showRefereeModal(prefilledName = '') {
+    // PAUSE TIMER WHILE REFEREE OVERRIDE IS OPEN
+    game.pauseTimer();
+
     const activePlayer = game.getActivePlayer();
     const club = game.state.match?.club;
 
@@ -680,7 +714,7 @@ class GoalRoyaleApp {
       <div class="modal-backdrop" id="modal-bg">
         <div class="modal-dialog">
           <button class="modal-close-btn" id="close-modal-x">✕</button>
-          <h2 class="modal-title">⚖️ REFEREE OVERRIDE</h2>
+          <h2 class="modal-title">⚖️ REFEREE OVERRIDE (Timer Paused)</h2>
           <p style="font-size: 13px; color: #94a3b8;">
             Enter a footballer not in the top-50 database for <strong>${club?.name}</strong>.
           </p>
@@ -713,6 +747,8 @@ class GoalRoyaleApp {
 
     const close = () => {
       this.modalEl.innerHTML = '';
+      // RESUME TIMER IF CANCELLED
+      game.resumeTimer();
     };
 
     document.getElementById('modal-bg')?.addEventListener('click', (e) => {
@@ -730,10 +766,11 @@ class GoalRoyaleApp {
         return;
       }
 
-      close();
+      this.modalEl.innerHTML = '';
       const res = game.submitRefereeOverride(name, goals);
       if (!res.success && res.error) {
         alert(res.error);
+        game.resumeTimer();
       }
     });
   }
