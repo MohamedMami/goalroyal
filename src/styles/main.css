@@ -1097,24 +1097,375 @@ input:checked + .slider-toggle:before {
   color: #fff;
 }
 
-/* Responsive adjustments */
-@media (max-width: 640px) {
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVENESS
+   ========================================================================== */
+
+@media (max-width: 768px) {
   #app {
-    padding: 8px;
+    padding: 10px 8px;
+    padding-bottom: calc(env(safe-area-inset-bottom, 16px) + 12px);
   }
-  .setup-title {
-    font-size: 28px;
+
+  .players-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
+}
+
+@media (max-width: 640px) {
+  /* Header */
+  .royale-header {
+    padding: 8px 10px;
+    margin-bottom: 12px;
+  }
+
+  .royale-logo {
+    gap: 8px;
+  }
+
+  .royale-crown-icon {
+    font-size: 24px;
+  }
+
   .royale-logo-title {
+    font-size: 19px;
+  }
+
+  .royale-logo-subtitle {
+    display: none;
+  }
+
+  .header-controls {
+    gap: 6px;
+  }
+
+  .btn-icon-only {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  /* Setup Screen */
+  .setup-container {
+    gap: 12px;
+  }
+
+  .setup-banner {
+    padding: 16px 12px;
+  }
+
+  .setup-title {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .setup-desc {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .setup-section-card {
+    padding: 14px 12px;
+  }
+
+  .section-label {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .player-count-tabs {
+    gap: 8px;
+  }
+
+  .count-tab-btn {
+    font-size: 14px;
+    padding: 10px 4px;
+  }
+
+  .player-inputs-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .player-input-card {
+    padding: 8px 12px;
+  }
+
+  .player-avatar-badge {
+    width: 38px;
+    height: 38px;
     font-size: 20px;
   }
-  .console-actions-row {
-    flex-direction: column;
+
+  .player-name-input {
+    font-size: 16px; /* Prevents iOS auto-zoom */
   }
-  .action-btn-main, .action-btn-secondary {
+
+  .target-number {
+    font-size: 30px;
+  }
+
+  .target-presets {
+    gap: 6px;
+  }
+
+  .preset-chip {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .clubs-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    max-height: 200px;
+  }
+
+  .club-card-btn {
+    padding: 8px 4px;
+    gap: 4px;
+  }
+
+  .club-badge-circle {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .club-name-label {
+    font-size: 11px;
+  }
+
+  .settings-options-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .setting-pill-box {
+    padding: 10px 14px;
+  }
+
+  .launch-battle-btn {
+    font-size: 20px;
+    padding: 16px 20px;
     width: 100%;
   }
+
+  /* Battle Arena */
+  .battle-arena-container {
+    gap: 12px;
+  }
+
+  .arena-top-banner {
+    padding: 8px 12px;
+  }
+
+  .active-club-crest {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .active-club-title {
+    font-size: 16px;
+  }
+
+  .active-round-tag {
+    font-size: 10px;
+  }
+
+  .players-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .player-battle-card {
+    padding: 10px 8px;
+    gap: 6px;
+  }
+
+  .active-indicator-tag {
+    top: -9px;
+    font-size: 9px;
+    padding: 1px 6px;
+  }
+
+  .player-card-header {
+    gap: 6px;
+  }
+
+  .player-avatar-icon {
+    font-size: 20px;
+  }
+
+  .player-name-heading {
+    font-size: 14px;
+  }
+
+  .player-score-box {
+    padding: 6px 0;
+  }
+
+  .player-score-digits {
+    font-size: 28px;
+  }
+
+  .score-goals-label {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+
+  .elixir-meter-track {
+    height: 8px;
+  }
+
+  .card-penalties-row {
+    min-height: 16px;
+    gap: 4px;
+  }
+
+  .yellow-card-pill, .red-card-pill {
+    width: 12px;
+    height: 15px;
+  }
+
+  /* Command Console */
+  .battle-command-console {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .turn-banner {
+    font-size: 16px;
+  }
+
+  .timer-dial-container {
+    padding: 4px 10px;
+  }
+
+  .timer-seconds-badge {
+    font-size: 17px;
+  }
+
+  .player-search-bar {
+    font-size: 16px; /* Prevents auto-zoom on iOS Safari */
+    padding: 12px 14px;
+  }
+
+  .autocomplete-dropdown {
+    max-height: 200px;
+  }
+
+  .autocomplete-item {
+    padding: 10px 12px;
+  }
+
+  .item-player-name {
+    font-size: 14px;
+  }
+
+  .item-select-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .console-actions-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .action-btn-main {
+    width: 100%;
+    order: 1;
+    font-size: 16px;
+    padding: 13px;
+  }
+
+  .action-btn-secondary {
+    flex: 1;
+    order: 2;
+    font-size: 13px;
+    padding: 10px 6px;
+    white-space: nowrap;
+  }
+
+  .action-ticker-box {
+    font-size: 13px;
+    padding: 8px 10px;
+    min-height: 36px;
+  }
+
+  /* Modals */
+  .modal-backdrop {
+    padding: 12px;
+  }
+
+  .modal-dialog {
+    padding: 18px 14px;
+    max-width: 100%;
+    max-height: 88vh;
+    overflow-y: auto;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  /* Victory Screen */
+  .victory-screen-container {
+    padding: 28px 16px;
+    margin: 10px auto;
+    gap: 18px;
+  }
+
+  .victory-trophy-crown {
+    font-size: 56px;
+  }
+
+  .victory-heading {
+    font-size: 32px;
+  }
+
+  .winner-champion-card {
+    padding: 12px 18px;
+    gap: 12px;
+  }
+
+  .champion-avatar {
+    font-size: 32px;
+  }
+
+  .champion-name {
+    font-size: 22px;
+  }
+
   .victory-actions {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .victory-actions .btn-3d {
+    padding: 14px;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .clubs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .royale-logo-title {
+    font-size: 17px;
+  }
+
+  .player-score-digits {
+    font-size: 24px;
+  }
+
+  .action-btn-secondary {
+    font-size: 11px;
+    padding: 8px 4px;
   }
 }
