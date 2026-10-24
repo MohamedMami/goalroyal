@@ -16,7 +16,8 @@ export const AVATARS = [
 
 export class GameEngine {
   constructor() {
-    this.clubs = clubsData.clubs;
+    this.clubs = JSON.parse(JSON.stringify(clubsData.clubs));
+    this.loadCustomPlayersFromStorage();
     this.listeners = [];
 
     this.state = {
@@ -349,7 +350,10 @@ export class GameEngine {
       }
       club.players.sort((a, b) => b.goals - a.goals);
 
-      // 2. Persist to src/data/clubs.json via Vite API endpoint
+      // 2. Save in browser localStorage for persistent play across sessions
+      this.saveCustomPlayerToStorage(club.id, playerRecord);
+
+      // 3. Persist to server / clubs.json via API endpoint
       try {
         fetch('/api/add-player', {
           method: 'POST',
@@ -374,6 +378,22 @@ export class GameEngine {
       goals: cleanGoals,
       isOverride: true
     });
+  }
+
+  async lookupSportApiPlayer(playerName) {
+    const club = this.state.match?.club;
+    if (!club) return { success: false, error: 'No active match club' };
+
+    try {
+      const res = await fetch('/api/sportapi-lookup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ playerName, clubId: club.id })
+      });
+      return await res.json();
+    } catch (err) {
+      return { success: false, error: err.message };
+    }
   }
 
   advanceTurn() {
@@ -407,6 +427,54 @@ export class GameEngine {
     this.state.match.activePlayerIndex = nextIdx;
     this.startTurnTimer();
     this.notify();
+  }
+
+  loadCustomPlayersFromStorage() {
+    try {
+      if (typeof window === 'undefined' || !window.localStorage) return;
+      const stored = localStorage.getItem('goalroyale_custom_players');
+      if (stored) {
+        const customMap = JSON.parse(stored);
+        Object.entries(customMap).forEach(([clubId, players]) => {
+          const club = this.clubs.find((c) => c.id === clubId);
+          if (club && Array.isArray(players)) {
+            players.forEach((p) => {
+              const existingIdx = club.players.findIndex(
+                (x) => x.name.toLowerCase() === p.name.toLowerCase()
+              );
+              if (existingIdx >= 0) {
+                club.players[existingIdx] = { ...club.players[existingIdx], ...p };
+              } else {
+                club.players.push(p);
+              }
+            });
+            club.players.sort((a, b) => b.goals - a.goals);
+          }
+        });
+      }
+    } catch {
+      // Ignore storage errors
+    }
+  }
+
+  saveCustomPlayerToStorage(clubId, player) {
+    try {
+      if (typeof window === 'undefined' || !window.localStorage) return;
+      const stored = localStorage.getItem('goalroyale_custom_players');
+      const customMap = stored ? JSON.parse(stored) : {};
+      if (!customMap[clubId]) customMap[clubId] = [];
+      const idx = customMap[clubId].findIndex(
+        (p) => p.name.toLowerCase() === player.name.toLowerCase()
+      );
+      if (idx >= 0) {
+        customMap[clubId][idx] = player;
+      } else {
+        customMap[clubId].push(player);
+      }
+      localStorage.setItem('goalroyale_custom_players', JSON.stringify(customMap));
+    } catch {
+      // Ignore storage errors
+    }
   }
 
   resetToSetup() {

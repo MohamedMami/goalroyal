@@ -499,15 +499,64 @@ class GoalRoyaleApp {
       if (this.currentSuggestions.length === 0) {
         dropdown.innerHTML = `
           <div style="padding: 14px; text-align: center; color: #94a3b8; font-size: 13px;">
-            No verified player found for "<strong>${q}</strong>".<br/>
-            <button class="btn-3d btn-gold" id="quick-override-btn" style="margin-top: 8px; font-size: 12px; padding: 6px 12px;">
-              ⚖️ Enter as Custom Player
-            </button>
+            Not in top-50 list: "<strong>${q}</strong>"<br/>
+            <div style="display: flex; gap: 8px; justify-content: center; margin-top: 10px; flex-wrap: wrap;">
+              <button class="btn-3d btn-green" id="sportapi-verify-btn" style="font-size: 12px; padding: 8px 12px;">
+                ⚡ Verify on SportAPI
+              </button>
+              <button class="btn-3d btn-gold" id="quick-override-btn" style="font-size: 12px; padding: 8px 12px;">
+                ⚖️ Manual Referee
+              </button>
+            </div>
+            <div id="sportapi-lookup-status" style="margin-top: 8px; font-weight: 700; font-size: 12px; color: #38bdf8;"></div>
           </div>
         `;
         dropdown.style.display = 'flex';
+
         document.getElementById('quick-override-btn')?.addEventListener('click', () => {
           this.showRefereeModal(q);
+        });
+
+        document.getElementById('sportapi-verify-btn')?.addEventListener('click', async () => {
+          const btn = document.getElementById('sportapi-verify-btn');
+          const status = document.getElementById('sportapi-lookup-status');
+          if (btn) {
+            btn.disabled = true;
+            btn.textContent = '⏳ Checking...';
+          }
+          if (status) status.textContent = '🔎 Querying official SportAPI database...';
+
+          const res = await game.lookupSportApiPlayer(q);
+          if (res.success && res.player) {
+            if (status) {
+              status.innerHTML = `<span style="color: #34d399;">✅ Verified: ${res.player.name}! Playing...</span>`;
+            }
+            // Auto add to club in memory
+            const club = game.state.match?.club;
+            if (club) {
+              club.players.push(res.player);
+              club.players.sort((a, b) => b.goals - a.goals);
+              // Save to localStorage for persistent play
+              game.saveCustomPlayerToStorage(club.id, res.player);
+              // Persist to clubs.json
+              fetch('/api/add-player', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ clubId: club.id, player: res.player })
+              });
+            }
+            setTimeout(() => {
+              this.pickSuggestion(res.player);
+            }, 600);
+          } else {
+            if (status) {
+              status.innerHTML = `<span style="color: #ef4444;">❌ ${res.error || 'Player not found on SportAPI'}</span>`;
+            }
+            if (btn) {
+              btn.disabled = false;
+              btn.textContent = '⚡ Try Again';
+            }
+          }
         });
         return;
       }
@@ -717,14 +766,20 @@ class GoalRoyaleApp {
           <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px;">
             <div>
               <label style="font-size: 13px; font-weight: 700; color: #cbd5e1; margin-bottom: 4px; display: block;">Footballer Name</label>
-              <input type="text" class="player-search-bar" id="override-player-name" 
-                     value="${prefilledName}" placeholder="e.g. Sergio Ramos" style="padding: 12px 14px; font-size: 16px;" />
+              <div style="display: flex; gap: 8px;">
+                <input type="text" class="player-search-bar" id="override-player-name" 
+                       value="${prefilledName}" placeholder="e.g. Mbappé, Sergio Ramos" style="padding: 12px 14px; font-size: 16px; flex: 1;" />
+                <button class="btn-3d btn-green" id="referee-sportapi-btn" style="font-size: 13px; padding: 10px 14px; white-space: nowrap;">
+                  ⚡ Auto-Check
+                </button>
+              </div>
+              <div id="referee-lookup-status" style="font-size: 12px; margin-top: 5px; font-weight: 700; color: #38bdf8;"></div>
             </div>
 
             <div>
               <label style="font-size: 13px; font-weight: 700; color: #cbd5e1; margin-bottom: 4px; display: block;">Official Club Goals</label>
               <input type="number" class="player-search-bar" id="override-player-goals" 
-                     placeholder="e.g. 101" min="1" max="1000" style="padding: 12px 14px; font-size: 16px;" />
+                     placeholder="e.g. 72" min="1" max="1000" style="padding: 12px 14px; font-size: 16px;" />
             </div>
           </div>
 
@@ -751,6 +806,34 @@ class GoalRoyaleApp {
     });
     document.getElementById('close-modal-x')?.addEventListener('click', close);
     document.getElementById('cancel-override-btn')?.addEventListener('click', close);
+
+    // Auto-check with SportAPI
+    document.getElementById('referee-sportapi-btn')?.addEventListener('click', async () => {
+      const nameInput = document.getElementById('override-player-name');
+      const goalsInput = document.getElementById('override-player-goals');
+      const statusEl = document.getElementById('referee-lookup-status');
+      const term = nameInput?.value.trim();
+
+      if (!term) {
+        if (statusEl) statusEl.innerHTML = '<span style="color: #ef4444;">Please type a player name first!</span>';
+        return;
+      }
+
+      if (statusEl) statusEl.innerHTML = '⏳ Checking SportAPI official database...';
+      const res = await game.lookupSportApiPlayer(term);
+
+      if (res.success && res.player) {
+        nameInput.value = res.player.name;
+        goalsInput.value = res.player.goals;
+        if (statusEl) {
+          statusEl.innerHTML = `<span style="color: #34d399;">✅ Official SportAPI Record: ${res.player.goals} Goals (${res.player.appearances || 0} Apps)</span>`;
+        }
+      } else {
+        if (statusEl) {
+          statusEl.innerHTML = `<span style="color: #ef4444;">❌ ${res.error || 'No record found on SportAPI'}</span>`;
+        }
+      }
+    });
 
     document.getElementById('confirm-override-btn')?.addEventListener('click', () => {
       const name = document.getElementById('override-player-name').value.trim();
