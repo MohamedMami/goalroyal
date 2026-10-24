@@ -26,7 +26,18 @@ class SoundManager {
     return this.muted;
   }
 
+  vibrate(pattern) {
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      try {
+        navigator.vibrate(pattern);
+      } catch {
+        // Silently ignore if not supported or permitted
+      }
+    }
+  }
+
   playClick() {
+    this.vibrate(12);
     if (this.muted) return;
     this.init();
     if (!this.ctx) return;
@@ -50,6 +61,7 @@ class SoundManager {
   }
 
   playScoreDeduct(goals) {
+    this.vibrate([30, 40, 30]);
     if (this.muted) return;
     this.init();
     if (!this.ctx) return;
@@ -85,6 +97,7 @@ class SoundManager {
   }
 
   playTick(urgent = false) {
+    if (urgent) this.vibrate(10);
     if (this.muted) return;
     this.init();
     if (!this.ctx) return;
@@ -107,6 +120,7 @@ class SoundManager {
   }
 
   playBust() {
+    this.vibrate([60, 50, 60]);
     if (this.muted) return;
     this.init();
     if (!this.ctx) return;
@@ -132,6 +146,7 @@ class SoundManager {
   }
 
   playVictory() {
+    this.vibrate([100, 60, 100, 60, 200]);
     if (this.muted) return;
     this.init();
     if (!this.ctx) return;

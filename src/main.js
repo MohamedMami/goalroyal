@@ -716,15 +716,15 @@ class GoalRoyaleApp {
 
           <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px;">
             <div>
-              <label style="font-size: 12px; font-weight: 700; color: #cbd5e1;">Footballer Name</label>
+              <label style="font-size: 13px; font-weight: 700; color: #cbd5e1; margin-bottom: 4px; display: block;">Footballer Name</label>
               <input type="text" class="player-search-bar" id="override-player-name" 
-                     value="${prefilledName}" placeholder="e.g. Sergio Ramos" style="padding: 10px 14px; font-size: 15px;" />
+                     value="${prefilledName}" placeholder="e.g. Sergio Ramos" style="padding: 12px 14px; font-size: 16px;" />
             </div>
 
             <div>
-              <label style="font-size: 12px; font-weight: 700; color: #cbd5e1;">Official Club Goals</label>
+              <label style="font-size: 13px; font-weight: 700; color: #cbd5e1; margin-bottom: 4px; display: block;">Official Club Goals</label>
               <input type="number" class="player-search-bar" id="override-player-goals" 
-                     placeholder="e.g. 101" min="1" max="1000" style="padding: 10px 14px; font-size: 15px;" />
+                     placeholder="e.g. 101" min="1" max="1000" style="padding: 12px 14px; font-size: 16px;" />
             </div>
           </div>
 

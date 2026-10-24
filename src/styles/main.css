@@ -13,15 +13,22 @@
   -webkit-font-smoothing: antialiased;
 }
 
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--color-arena-bg);
   color: var(--color-text-light);
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Pitch / Arena Background Pattern */
@@ -78,8 +85,9 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 16px;
+  padding: max(16px, env(safe-area-inset-top, 16px)) max(16px, env(safe-area-inset-right, 16px)) max(16px, env(safe-area-inset-bottom, 16px)) max(16px, env(safe-area-inset-left, 16px));
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
 }
@@ -1103,13 +1111,17 @@ input:checked + .slider-toggle:before {
 
 @media (max-width: 768px) {
   #app {
-    padding: 10px 8px;
-    padding-bottom: calc(env(safe-area-inset-bottom, 16px) + 12px);
+    padding: max(10px, env(safe-area-inset-top, 10px)) max(10px, env(safe-area-inset-right, 10px)) max(14px, env(safe-area-inset-bottom, 14px)) max(10px, env(safe-area-inset-left, 10px));
   }
 
   .players-cards-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+
+  /* Centered 3rd card for 3-player party match */
+  .players-cards-grid > .player-battle-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1141,8 +1153,10 @@ input:checked + .slider-toggle:before {
   }
 
   .btn-icon-only {
+    min-width: 44px;
+    min-height: 44px;
     padding: 6px 8px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   /* Setup Screen */
@@ -1179,7 +1193,11 @@ input:checked + .slider-toggle:before {
 
   .count-tab-btn {
     font-size: 14px;
-    padding: 10px 4px;
+    padding: 12px 4px;
+    min-height: 44px;
+  }
+  .count-tab-btn:active {
+    transform: scale(0.96);
   }
 
   .player-inputs-grid {
@@ -1192,13 +1210,13 @@ input:checked + .slider-toggle:before {
   }
 
   .player-avatar-badge {
-    width: 38px;
-    height: 38px;
-    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
   }
 
   .player-name-input {
-    font-size: 16px; /* Prevents iOS auto-zoom */
+    font-size: 16px; /* Prevents iOS Safari auto-zoom */
   }
 
   .target-number {
@@ -1210,19 +1228,32 @@ input:checked + .slider-toggle:before {
   }
 
   .preset-chip {
-    font-size: 12px;
-    padding: 6px 10px;
+    font-size: 13px;
+    padding: 8px 12px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .preset-chip:active {
+    transform: scale(0.96);
   }
 
   .clubs-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     max-height: 200px;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
   .club-card-btn {
-    padding: 8px 4px;
+    padding: 10px 4px;
     gap: 4px;
+    min-height: 54px;
+  }
+  .club-card-btn:active {
+    transform: scale(0.96);
   }
 
   .club-badge-circle {
@@ -1244,10 +1275,15 @@ input:checked + .slider-toggle:before {
     padding: 10px 14px;
   }
 
+  .timer-select {
+    font-size: 16px; /* Prevents iOS Safari auto-zoom */
+  }
+
   .launch-battle-btn {
     font-size: 20px;
     padding: 16px 20px;
     width: 100%;
+    min-height: 54px;
   }
 
   /* Battle Arena */
@@ -1348,15 +1384,19 @@ input:checked + .slider-toggle:before {
 
   .player-search-bar {
     font-size: 16px; /* Prevents auto-zoom on iOS Safari */
-    padding: 12px 14px;
+    padding: 14px 14px;
   }
 
   .autocomplete-dropdown {
-    max-height: 200px;
+    max-height: 220px;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    z-index: 100;
   }
 
   .autocomplete-item {
-    padding: 10px 12px;
+    padding: 12px 14px;
+    min-height: 50px;
   }
 
   .item-player-name {
@@ -1364,8 +1404,8 @@ input:checked + .slider-toggle:before {
   }
 
   .item-select-badge {
-    font-size: 11px;
-    padding: 4px 10px;
+    font-size: 12px;
+    padding: 6px 12px;
   }
 
   .console-actions-row {
@@ -1378,14 +1418,16 @@ input:checked + .slider-toggle:before {
     width: 100%;
     order: 1;
     font-size: 16px;
-    padding: 13px;
+    padding: 14px;
+    min-height: 48px;
   }
 
   .action-btn-secondary {
     flex: 1;
     order: 2;
     font-size: 13px;
-    padding: 10px 6px;
+    padding: 12px 6px;
+    min-height: 44px;
     white-space: nowrap;
   }
 
@@ -1397,14 +1439,17 @@ input:checked + .slider-toggle:before {
 
   /* Modals */
   .modal-backdrop {
-    padding: 12px;
+    padding: max(12px, env(safe-area-inset-top, 12px)) max(12px, env(safe-area-inset-right, 12px)) max(16px, env(safe-area-inset-bottom, 16px)) max(12px, env(safe-area-inset-left, 12px));
+    overscroll-behavior: contain;
   }
 
   .modal-dialog {
     padding: 18px 14px;
     max-width: 100%;
-    max-height: 88vh;
+    max-height: 85vh;
+    max-height: 85dvh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .modal-title {
@@ -1448,6 +1493,7 @@ input:checked + .slider-toggle:before {
     padding: 14px;
     font-size: 16px;
     width: 100%;
+    min-height: 48px;
   }
 }
 
@@ -1466,6 +1512,73 @@ input:checked + .slider-toggle:before {
 
   .action-btn-secondary {
     font-size: 11px;
-    padding: 8px 4px;
+    padding: 10px 4px;
+  }
+}
+
+/* Mobile Landscape Orientation */
+@media (max-height: 520px) and (orientation: landscape) {
+  .royale-header {
+    padding: 6px 12px;
+    margin-bottom: 8px;
+  }
+
+  .royale-crown-icon {
+    font-size: 20px;
+  }
+
+  .royale-logo-title {
+    font-size: 18px;
+  }
+
+  .royale-logo-subtitle {
+    display: none;
+  }
+
+  .setup-container {
+    gap: 10px;
+  }
+
+  .setup-banner {
+    padding: 10px;
+  }
+
+  .setup-title {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  .battle-arena-container {
+    gap: 10px;
+  }
+
+  .players-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important;
+    gap: 8px;
+  }
+
+  .player-battle-card {
+    padding: 8px 6px;
+    gap: 4px;
+  }
+
+  .player-score-digits {
+    font-size: 22px;
+  }
+
+  .battle-command-console {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+
+  .action-btn-main {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  .modal-dialog {
+    max-height: 88vh;
+    max-height: 88dvh;
+    padding: 14px;
   }
 }
