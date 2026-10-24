@@ -325,10 +325,53 @@ export class GameEngine {
       return { success: false, error: 'Enter valid player name and positive goal count' };
     }
 
+    const club = this.state.match?.club;
+    const cleanName = name.trim();
+    const cleanGoals = parseInt(goals, 10);
+
+    const playerRecord = {
+      name: cleanName,
+      shortName: cleanName,
+      goals: cleanGoals,
+      years: 'Verified Record',
+      aliases: [cleanName.toLowerCase()]
+    };
+
+    // 1. Add to active club in-memory so search and future turns have it immediately
+    if (club) {
+      const existing = club.players.find(
+        (p) => p.name.toLowerCase() === cleanName.toLowerCase()
+      );
+      if (existing) {
+        existing.goals = cleanGoals;
+      } else {
+        club.players.push(playerRecord);
+      }
+      club.players.sort((a, b) => b.goals - a.goals);
+
+      // 2. Persist to src/data/clubs.json via Vite API endpoint
+      try {
+        fetch('/api/add-player', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ clubId: club.id, player: playerRecord })
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log('Saved to clubs.json:', data);
+          })
+          .catch((err) => {
+            console.warn('Could not persist to server clubs.json:', err);
+          });
+      } catch (e) {
+        console.warn('Fetch failed:', e);
+      }
+    }
+
     return this.submitPlayer({
-      name: name.trim(),
-      shortName: name.trim(),
-      goals: parseInt(goals, 10),
+      name: cleanName,
+      shortName: cleanName,
+      goals: cleanGoals,
       isOverride: true
     });
   }

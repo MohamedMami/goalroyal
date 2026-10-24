@@ -9,46 +9,399 @@
       "badgeColor": "#FEBE10",
       "accentColor": "#00529F",
       "players": [
-        {"name": "Cristiano Ronaldo", "shortName": "CR7", "goals": 450, "years": "2009–2018", "aliases": ["ronaldo", "cr7", "cristiano"]},
-        {"name": "Karim Benzema", "shortName": "Benzema", "goals": 354, "years": "2009–2023", "aliases": ["benzema", "karim"]},
-        {"name": "Raúl González", "shortName": "Raúl", "goals": 323, "years": "1994–2010", "aliases": ["raul", "raul gonzalez"]},
-        {"name": "Alfredo Di Stéfano", "shortName": "Di Stéfano", "goals": 308, "years": "1953–1964", "aliases": ["di stefano", "stefano"]},
-        {"name": "Carlos Santillana", "shortName": "Santillana", "goals": 290, "years": "1971–1988", "aliases": ["santillana"]},
-        {"name": "Ferenc Puskás", "shortName": "Puskás", "goals": 242, "years": "1958–1966", "aliases": ["puskas", "ferenc puskas"]},
-        {"name": "Hugo Sánchez", "shortName": "Hugo Sánchez", "goals": 208, "years": "1985–1992", "aliases": ["hugo sanchez", "sanchez"]},
-        {"name": "Paco Gento", "shortName": "Gento", "goals": 182, "years": "1953–1971", "aliases": ["gento", "paco gento"]},
-        {"name": "Pirri", "shortName": "Pirri", "goals": 172, "years": "1964–1980", "aliases": ["pirri"]},
-        {"name": "Emilio Butragueño", "shortName": "Butragueño", "goals": 171, "years": "1984–1995", "aliases": ["butragueno", "el buitre"]},
-        {"name": "Amancio Amaro", "shortName": "Amancio", "goals": 155, "years": "1962–1976", "aliases": ["amancio"]},
-        {"name": "Míchel", "shortName": "Míchel", "goals": 130, "years": "1982–1996", "aliases": ["michel"]},
-        {"name": "Fernando Hierro", "shortName": "Hierro", "goals": 127, "years": "1989–2003", "aliases": ["hierro", "fernando hierro"]},
-        {"name": "Gonzalo Higuaín", "shortName": "Higuaín", "goals": 121, "years": "2007–2013", "aliases": ["higuain", "pipita"]},
-        {"name": "Gareth Bale", "shortName": "Bale", "goals": 106, "years": "2013–2022", "aliases": ["bale", "gareth bale"]},
-        {"name": "Ronaldo Nazário", "shortName": "R9", "goals": 104, "years": "2002–2007", "aliases": ["r9", "el fenomeno", "ronaldo nazario"]},
-        {"name": "Sergio Ramos", "shortName": "Ramos", "goals": 101, "years": "2005–2021", "aliases": ["ramos", "sergio ramos"]},
-        {"name": "Iván Zamorano", "shortName": "Zamorano", "goals": 101, "years": "1992–1996", "aliases": ["zamorano", "ivan zamorano"]},
-        {"name": "Fernando Morientes", "shortName": "Morientes", "goals": 100, "years": "1997–2005", "aliases": ["morientes"]},
-        {"name": "Vinícius Júnior", "shortName": "Vini Jr", "goals": 88, "years": "2018–present", "aliases": ["vini", "vinicius", "vini jr"]},
-        {"name": "Guti", "shortName": "Guti", "goals": 77, "years": "1995–2010", "aliases": ["guti", "jose maria guti"]},
-        {"name": "Roberto Carlos", "shortName": "Roberto Carlos", "goals": 69, "years": "1996–2007", "aliases": ["roberto carlos"]},
-        {"name": "Ruud van Nistelrooy", "shortName": "Van Nistelrooy", "goals": 64, "years": "2006–2010", "aliases": ["van nistelrooy", "nistelrooy"]},
-        {"name": "Marco Asensio", "shortName": "Asensio", "goals": 61, "years": "2016–2023", "aliases": ["asensio", "marco asensio"]},
-        {"name": "Rodrygo Goes", "shortName": "Rodrygo", "goals": 57, "years": "2019–present", "aliases": ["rodrygo"]},
-        {"name": "Isco", "shortName": "Isco", "goals": 53, "years": "2013–2022", "aliases": ["isco", "isco alarcon"]},
-        {"name": "Zinedine Zidane", "shortName": "Zidane", "goals": 49, "years": "2001–2006", "aliases": ["zidane", "zizou"]},
-        {"name": "Luka Modrić", "shortName": "Modrić", "goals": 39, "years": "2012–present", "aliases": ["modric", "luka modric"]},
-        {"name": "Marcelo Vieira", "shortName": "Marcelo", "goals": 38, "years": "2007–2022", "aliases": ["marcelo"]},
-        {"name": "Ángel Di María", "shortName": "Di María", "goals": 36, "years": "2010–2014", "aliases": ["di maria", "angel di maria"]},
-        {"name": "James Rodríguez", "shortName": "James", "goals": 37, "years": "2014–2020", "aliases": ["james", "james rodriguez"]},
-        {"name": "Casemiro", "shortName": "Casemiro", "goals": 31, "years": "2013–2022", "aliases": ["casemiro"]},
-        {"name": "Álvaro Morata", "shortName": "Morata", "goals": 31, "years": "2010–2017", "aliases": ["morata", "alvaro morata"]},
-        {"name": "Kaká", "shortName": "Kaká", "goals": 29, "years": "2009–2013", "aliases": ["kaka"]},
-        {"name": "Toni Kroos", "shortName": "Kroos", "goals": 28, "years": "2014–2024", "aliases": ["kroos", "toni kroos"]},
-        {"name": "Mesut Özil", "shortName": "Özil", "goals": 27, "years": "2010–2013", "aliases": ["ozil", "mesut ozil"]},
-        {"name": "Jude Bellingham", "shortName": "Bellingham", "goals": 25, "years": "2023–present", "aliases": ["bellingham", "jude"]},
-        {"name": "David Beckham", "shortName": "Beckham", "goals": 20, "years": "2003–2007", "aliases": ["beckham", "david beckham"]},
-        {"name": "Michael Owen", "shortName": "Owen", "goals": 16, "years": "2004–2005", "aliases": ["owen", "michael owen"]},
-        {"name": "Kylian Mbappé", "shortName": "Mbappé", "goals": 8, "years": "2024–present", "aliases": ["mbappe", "kylian mbappe"]}
+        {
+          "name": "Cristiano Ronaldo",
+          "shortName": "CR7",
+          "goals": 450,
+          "years": "2009–2018",
+          "aliases": [
+            "ronaldo",
+            "cr7",
+            "cristiano"
+          ]
+        },
+        {
+          "name": "Karim Benzema",
+          "shortName": "Benzema",
+          "goals": 354,
+          "years": "2009–2023",
+          "aliases": [
+            "benzema",
+            "karim"
+          ]
+        },
+        {
+          "name": "Raúl González",
+          "shortName": "Raúl",
+          "goals": 323,
+          "years": "1994–2010",
+          "aliases": [
+            "raul",
+            "raul gonzalez"
+          ]
+        },
+        {
+          "name": "Alfredo Di Stéfano",
+          "shortName": "Di Stéfano",
+          "goals": 308,
+          "years": "1953–1964",
+          "aliases": [
+            "di stefano",
+            "stefano"
+          ]
+        },
+        {
+          "name": "Carlos Santillana",
+          "shortName": "Santillana",
+          "goals": 290,
+          "years": "1971–1988",
+          "aliases": [
+            "santillana"
+          ]
+        },
+        {
+          "name": "Ferenc Puskás",
+          "shortName": "Puskás",
+          "goals": 242,
+          "years": "1958–1966",
+          "aliases": [
+            "puskas",
+            "ferenc puskas"
+          ]
+        },
+        {
+          "name": "Hugo Sánchez",
+          "shortName": "Hugo Sánchez",
+          "goals": 208,
+          "years": "1985–1992",
+          "aliases": [
+            "hugo sanchez",
+            "sanchez"
+          ]
+        },
+        {
+          "name": "Paco Gento",
+          "shortName": "Gento",
+          "goals": 182,
+          "years": "1953–1971",
+          "aliases": [
+            "gento",
+            "paco gento"
+          ]
+        },
+        {
+          "name": "Pirri",
+          "shortName": "Pirri",
+          "goals": 172,
+          "years": "1964–1980",
+          "aliases": [
+            "pirri"
+          ]
+        },
+        {
+          "name": "Emilio Butragueño",
+          "shortName": "Butragueño",
+          "goals": 171,
+          "years": "1984–1995",
+          "aliases": [
+            "butragueno",
+            "el buitre"
+          ]
+        },
+        {
+          "name": "Amancio Amaro",
+          "shortName": "Amancio",
+          "goals": 155,
+          "years": "1962–1976",
+          "aliases": [
+            "amancio"
+          ]
+        },
+        {
+          "name": "Míchel",
+          "shortName": "Míchel",
+          "goals": 130,
+          "years": "1982–1996",
+          "aliases": [
+            "michel"
+          ]
+        },
+        {
+          "name": "Fernando Hierro",
+          "shortName": "Hierro",
+          "goals": 127,
+          "years": "1989–2003",
+          "aliases": [
+            "hierro",
+            "fernando hierro"
+          ]
+        },
+        {
+          "name": "Gonzalo Higuaín",
+          "shortName": "Higuaín",
+          "goals": 121,
+          "years": "2007–2013",
+          "aliases": [
+            "higuain",
+            "pipita"
+          ]
+        },
+        {
+          "name": "Gareth Bale",
+          "shortName": "Bale",
+          "goals": 106,
+          "years": "2013–2022",
+          "aliases": [
+            "bale",
+            "gareth bale"
+          ]
+        },
+        {
+          "name": "Ronaldo Nazário",
+          "shortName": "R9",
+          "goals": 104,
+          "years": "2002–2007",
+          "aliases": [
+            "r9",
+            "el fenomeno",
+            "ronaldo nazario"
+          ]
+        },
+        {
+          "name": "Sergio Ramos",
+          "shortName": "Ramos",
+          "goals": 101,
+          "years": "2005–2021",
+          "aliases": [
+            "ramos",
+            "sergio ramos"
+          ]
+        },
+        {
+          "name": "Iván Zamorano",
+          "shortName": "Zamorano",
+          "goals": 101,
+          "years": "1992–1996",
+          "aliases": [
+            "zamorano",
+            "ivan zamorano"
+          ]
+        },
+        {
+          "name": "Fernando Morientes",
+          "shortName": "Morientes",
+          "goals": 100,
+          "years": "1997–2005",
+          "aliases": [
+            "morientes"
+          ]
+        },
+        {
+          "name": "Vinícius Júnior",
+          "shortName": "Vini Jr",
+          "goals": 88,
+          "years": "2018–present",
+          "aliases": [
+            "vini",
+            "vinicius",
+            "vini jr"
+          ]
+        },
+        {
+          "name": "Guti",
+          "shortName": "Guti",
+          "goals": 77,
+          "years": "1995–2010",
+          "aliases": [
+            "guti",
+            "jose maria guti"
+          ]
+        },
+        {
+          "name": "Roberto Carlos",
+          "shortName": "Roberto Carlos",
+          "goals": 69,
+          "years": "1996–2007",
+          "aliases": [
+            "roberto carlos"
+          ]
+        },
+        {
+          "name": "Ruud van Nistelrooy",
+          "shortName": "Van Nistelrooy",
+          "goals": 64,
+          "years": "2006–2010",
+          "aliases": [
+            "van nistelrooy",
+            "nistelrooy"
+          ]
+        },
+        {
+          "name": "Marco Asensio",
+          "shortName": "Asensio",
+          "goals": 61,
+          "years": "2016–2023",
+          "aliases": [
+            "asensio",
+            "marco asensio"
+          ]
+        },
+        {
+          "name": "Rodrygo Goes",
+          "shortName": "Rodrygo",
+          "goals": 57,
+          "years": "2019–present",
+          "aliases": [
+            "rodrygo"
+          ]
+        },
+        {
+          "name": "Isco",
+          "shortName": "Isco",
+          "goals": 53,
+          "years": "2013–2022",
+          "aliases": [
+            "isco",
+            "isco alarcon"
+          ]
+        },
+        {
+          "name": "Zinedine Zidane",
+          "shortName": "Zidane",
+          "goals": 49,
+          "years": "2001–2006",
+          "aliases": [
+            "zidane",
+            "zizou"
+          ]
+        },
+        {
+          "name": "Luka Modrić",
+          "shortName": "Modrić",
+          "goals": 39,
+          "years": "2012–present",
+          "aliases": [
+            "modric",
+            "luka modric"
+          ]
+        },
+        {
+          "name": "Marcelo Vieira",
+          "shortName": "Marcelo",
+          "goals": 38,
+          "years": "2007–2022",
+          "aliases": [
+            "marcelo"
+          ]
+        },
+        {
+          "name": "James Rodríguez",
+          "shortName": "James",
+          "goals": 37,
+          "years": "2014–2020",
+          "aliases": [
+            "james",
+            "james rodriguez"
+          ]
+        },
+        {
+          "name": "Ángel Di María",
+          "shortName": "Di María",
+          "goals": 36,
+          "years": "2010–2014",
+          "aliases": [
+            "di maria",
+            "angel di maria"
+          ]
+        },
+        {
+          "name": "Casemiro",
+          "shortName": "Casemiro",
+          "goals": 31,
+          "years": "2013–2022",
+          "aliases": [
+            "casemiro"
+          ]
+        },
+        {
+          "name": "Álvaro Morata",
+          "shortName": "Morata",
+          "goals": 31,
+          "years": "2010–2017",
+          "aliases": [
+            "morata",
+            "alvaro morata"
+          ]
+        },
+        {
+          "name": "Kaká",
+          "shortName": "Kaká",
+          "goals": 29,
+          "years": "2009–2013",
+          "aliases": [
+            "kaka"
+          ]
+        },
+        {
+          "name": "Toni Kroos",
+          "shortName": "Kroos",
+          "goals": 28,
+          "years": "2014–2024",
+          "aliases": [
+            "kroos",
+            "toni kroos"
+          ]
+        },
+        {
+          "name": "Mesut Özil",
+          "shortName": "Özil",
+          "goals": 27,
+          "years": "2010–2013",
+          "aliases": [
+            "ozil",
+            "mesut ozil"
+          ]
+        },
+        {
+          "name": "Jude Bellingham",
+          "shortName": "Bellingham",
+          "goals": 25,
+          "years": "2023–present",
+          "aliases": [
+            "bellingham",
+            "jude"
+          ]
+        },
+        {
+          "name": "David Beckham",
+          "shortName": "Beckham",
+          "goals": 20,
+          "years": "2003–2007",
+          "aliases": [
+            "beckham",
+            "david beckham"
+          ]
+        },
+        {
+          "name": "Michael Owen",
+          "shortName": "Owen",
+          "goals": 16,
+          "years": "2004–2005",
+          "aliases": [
+            "owen",
+            "michael owen"
+          ]
+        },
+        {
+          "name": "Kylian Mbappé",
+          "shortName": "Mbappé",
+          "goals": 8,
+          "years": "2024–present",
+          "aliases": [
+            "mbappe",
+            "kylian mbappe"
+          ]
+        }
       ]
     },
     {
@@ -60,42 +413,364 @@
       "badgeColor": "#A50044",
       "accentColor": "#004D98",
       "players": [
-        {"name": "Lionel Messi", "shortName": "Messi", "goals": 672, "years": "2004–2021", "aliases": ["messi", "leo", "leo messi"]},
-        {"name": "César Rodríguez", "shortName": "César", "goals": 232, "years": "1942–1955", "aliases": ["cesar", "cesar rodriguez"]},
-        {"name": "Luis Suárez", "shortName": "Suárez", "goals": 198, "years": "2014–2020", "aliases": ["suarez", "luis suarez", "el pistolero"]},
-        {"name": "László Kubala", "shortName": "Kubala", "goals": 194, "years": "1951–1961", "aliases": ["kubala", "laszlo kubala"]},
-        {"name": "Josep Samitier", "shortName": "Samitier", "goals": 184, "years": "1919–1932", "aliases": ["samitier"]},
-        {"name": "Paulino Alcántara", "shortName": "Alcántara", "goals": 143, "years": "1912–1927", "aliases": ["alcantara"]},
-        {"name": "Samuel Eto'o", "shortName": "Eto'o", "goals": 130, "years": "2004–2009", "aliases": ["etoo", "samuel etoo"]},
-        {"name": "Rivaldo", "shortName": "Rivaldo", "goals": 130, "years": "1997–2002", "aliases": ["rivaldo"]},
-        {"name": "Mariano Martín", "shortName": "Mariano Martín", "goals": 128, "years": "1939–1948", "aliases": ["mariano martin"]},
-        {"name": "Patrick Kluivert", "shortName": "Kluivert", "goals": 122, "years": "1998–2004", "aliases": ["kluivert", "patrick kluivert"]},
-        {"name": "Carles Rexach", "shortName": "Rexach", "goals": 122, "years": "1965–1981", "aliases": ["rexach"]},
-        {"name": "Hristo Stoichkov", "shortName": "Stoichkov", "goals": 117, "years": "1990–1998", "aliases": ["stoichkov", "hristo"]},
-        {"name": "Luis Enrique", "shortName": "Luis Enrique", "goals": 108, "years": "1996–2004", "aliases": ["luis enrique", "lucho"]},
-        {"name": "Neymar Jr", "shortName": "Neymar", "goals": 105, "years": "2013–2017", "aliases": ["neymar", "neymar jr"]},
-        {"name": "Pedro Rodríguez", "shortName": "Pedro", "goals": 99, "years": "2008–2015", "aliases": ["pedro", "pedrito"]},
-        {"name": "Ronaldinho Gaúcho", "shortName": "Ronaldinho", "goals": 94, "years": "2003–2008", "aliases": ["ronaldinho", "dinho"]},
-        {"name": "Ronald Koeman", "shortName": "Koeman", "goals": 88, "years": "1989–1995", "aliases": ["koeman", "ronald koeman"]},
-        {"name": "Xavi Hernández", "shortName": "Xavi", "goals": 85, "years": "1998–2015", "aliases": ["xavi", "xavi hernandez"]},
-        {"name": "Robert Lewandowski", "shortName": "Lewandowski", "goals": 75, "years": "2022–present", "aliases": ["lewandowski", "lewy", "robert lewandowski"]},
-        {"name": "Javier Saviola", "shortName": "Saviola", "goals": 72, "years": "2001–2007", "aliases": ["saviola", "el conejito"]},
-        {"name": "Andrés Iniesta", "shortName": "Iniesta", "goals": 57, "years": "2002–2018", "aliases": ["iniesta", "don andres"]},
-        {"name": "Gerard Piqué", "shortName": "Piqué", "goals": 53, "years": "2008–2022", "aliases": ["pique", "gerard pique"]},
-        {"name": "Gary Lineker", "shortName": "Lineker", "goals": 52, "years": "1986–1989", "aliases": ["lineker", "gary lineker"]},
-        {"name": "Thierry Henry", "shortName": "Henry", "goals": 49, "years": "2007–2010", "aliases": ["henry", "thierry henry"]},
-        {"name": "David Villa", "shortName": "Villa", "goals": 48, "years": "2010–2013", "aliases": ["villa", "david villa", "el guaje"]},
-        {"name": "Ronaldo Nazário", "shortName": "R9", "goals": 47, "years": "1996–1997", "aliases": ["r9", "ronaldo nazario"]},
-        {"name": "Alexis Sánchez", "shortName": "Alexis", "goals": 47, "years": "2011–2014", "aliases": ["alexis", "alexis sanchez"]},
-        {"name": "Ousmane Dembélé", "shortName": "Dembélé", "goals": 40, "years": "2017–2023", "aliases": ["dembele", "ousmane dembele"]},
-        {"name": "Romário", "shortName": "Romário", "goals": 39, "years": "1993–1995", "aliases": ["romario"]},
-        {"name": "Diego Maradona", "shortName": "Maradona", "goals": 38, "years": "1982–1984", "aliases": ["maradona", "diego maradona", "el pibe"]},
-        {"name": "Ferran Torres", "shortName": "Ferran", "goals": 26, "years": "2022–present", "aliases": ["ferran", "ferran torres"]},
-        {"name": "Raphinha", "shortName": "Raphinha", "goals": 26, "years": "2022–present", "aliases": ["raphinha"]},
-        {"name": "Dani Alves", "shortName": "Dani Alves", "goals": 22, "years": "2008–2016", "aliases": ["dani alves", "alves"]},
-        {"name": "Deco", "shortName": "Deco", "goals": 20, "years": "2004–2008", "aliases": ["deco"]},
-        {"name": "Sergio Busquets", "shortName": "Busquets", "goals": 18, "years": "2008–2023", "aliases": ["busquets", "sergio busquets"]},
-        {"name": "Lamine Yamal", "shortName": "Lamine Yamal", "goals": 12, "years": "2023–present", "aliases": ["lamine", "yamal", "lamine yamal"]}
+        {
+          "name": "Lionel Messi",
+          "shortName": "Messi",
+          "goals": 672,
+          "years": "2004–2021",
+          "aliases": [
+            "messi",
+            "leo",
+            "leo messi"
+          ]
+        },
+        {
+          "name": "César Rodríguez",
+          "shortName": "César",
+          "goals": 232,
+          "years": "1942–1955",
+          "aliases": [
+            "cesar",
+            "cesar rodriguez"
+          ]
+        },
+        {
+          "name": "Luis Suárez",
+          "shortName": "Suárez",
+          "goals": 198,
+          "years": "2014–2020",
+          "aliases": [
+            "suarez",
+            "luis suarez",
+            "el pistolero"
+          ]
+        },
+        {
+          "name": "László Kubala",
+          "shortName": "Kubala",
+          "goals": 194,
+          "years": "1951–1961",
+          "aliases": [
+            "kubala",
+            "laszlo kubala"
+          ]
+        },
+        {
+          "name": "Josep Samitier",
+          "shortName": "Samitier",
+          "goals": 184,
+          "years": "1919–1932",
+          "aliases": [
+            "samitier"
+          ]
+        },
+        {
+          "name": "Paulino Alcántara",
+          "shortName": "Alcántara",
+          "goals": 143,
+          "years": "1912–1927",
+          "aliases": [
+            "alcantara"
+          ]
+        },
+        {
+          "name": "Samuel Eto'o",
+          "shortName": "Eto'o",
+          "goals": 130,
+          "years": "2004–2009",
+          "aliases": [
+            "etoo",
+            "samuel etoo"
+          ]
+        },
+        {
+          "name": "Rivaldo",
+          "shortName": "Rivaldo",
+          "goals": 130,
+          "years": "1997–2002",
+          "aliases": [
+            "rivaldo"
+          ]
+        },
+        {
+          "name": "Mariano Martín",
+          "shortName": "Mariano Martín",
+          "goals": 128,
+          "years": "1939–1948",
+          "aliases": [
+            "mariano martin"
+          ]
+        },
+        {
+          "name": "Patrick Kluivert",
+          "shortName": "Kluivert",
+          "goals": 122,
+          "years": "1998–2004",
+          "aliases": [
+            "kluivert",
+            "patrick kluivert"
+          ]
+        },
+        {
+          "name": "Carles Rexach",
+          "shortName": "Rexach",
+          "goals": 122,
+          "years": "1965–1981",
+          "aliases": [
+            "rexach"
+          ]
+        },
+        {
+          "name": "Hristo Stoichkov",
+          "shortName": "Stoichkov",
+          "goals": 117,
+          "years": "1990–1998",
+          "aliases": [
+            "stoichkov",
+            "hristo"
+          ]
+        },
+        {
+          "name": "Luis Enrique",
+          "shortName": "Luis Enrique",
+          "goals": 108,
+          "years": "1996–2004",
+          "aliases": [
+            "luis enrique",
+            "lucho"
+          ]
+        },
+        {
+          "name": "Neymar Jr",
+          "shortName": "Neymar",
+          "goals": 105,
+          "years": "2013–2017",
+          "aliases": [
+            "neymar",
+            "neymar jr"
+          ]
+        },
+        {
+          "name": "Pedro Rodríguez",
+          "shortName": "Pedro",
+          "goals": 99,
+          "years": "2008–2015",
+          "aliases": [
+            "pedro",
+            "pedrito"
+          ]
+        },
+        {
+          "name": "Ronaldinho Gaúcho",
+          "shortName": "Ronaldinho",
+          "goals": 94,
+          "years": "2003–2008",
+          "aliases": [
+            "ronaldinho",
+            "dinho"
+          ]
+        },
+        {
+          "name": "Ronald Koeman",
+          "shortName": "Koeman",
+          "goals": 88,
+          "years": "1989–1995",
+          "aliases": [
+            "koeman",
+            "ronald koeman"
+          ]
+        },
+        {
+          "name": "Xavi Hernández",
+          "shortName": "Xavi",
+          "goals": 85,
+          "years": "1998–2015",
+          "aliases": [
+            "xavi",
+            "xavi hernandez"
+          ]
+        },
+        {
+          "name": "Robert Lewandowski",
+          "shortName": "Lewandowski",
+          "goals": 75,
+          "years": "2022–present",
+          "aliases": [
+            "lewandowski",
+            "lewy",
+            "robert lewandowski"
+          ]
+        },
+        {
+          "name": "Javier Saviola",
+          "shortName": "Saviola",
+          "goals": 72,
+          "years": "2001–2007",
+          "aliases": [
+            "saviola",
+            "el conejito"
+          ]
+        },
+        {
+          "name": "Andrés Iniesta",
+          "shortName": "Iniesta",
+          "goals": 57,
+          "years": "2002–2018",
+          "aliases": [
+            "iniesta",
+            "don andres"
+          ]
+        },
+        {
+          "name": "Gerard Piqué",
+          "shortName": "Piqué",
+          "goals": 53,
+          "years": "2008–2022",
+          "aliases": [
+            "pique",
+            "gerard pique"
+          ]
+        },
+        {
+          "name": "Gary Lineker",
+          "shortName": "Lineker",
+          "goals": 52,
+          "years": "1986–1989",
+          "aliases": [
+            "lineker",
+            "gary lineker"
+          ]
+        },
+        {
+          "name": "Thierry Henry",
+          "shortName": "Henry",
+          "goals": 49,
+          "years": "2007–2010",
+          "aliases": [
+            "henry",
+            "thierry henry"
+          ]
+        },
+        {
+          "name": "David Villa",
+          "shortName": "Villa",
+          "goals": 48,
+          "years": "2010–2013",
+          "aliases": [
+            "villa",
+            "david villa",
+            "el guaje"
+          ]
+        },
+        {
+          "name": "Ronaldo Nazário",
+          "shortName": "R9",
+          "goals": 47,
+          "years": "1996–1997",
+          "aliases": [
+            "r9",
+            "ronaldo nazario"
+          ]
+        },
+        {
+          "name": "Alexis Sánchez",
+          "shortName": "Alexis",
+          "goals": 47,
+          "years": "2011–2014",
+          "aliases": [
+            "alexis",
+            "alexis sanchez"
+          ]
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "shortName": "Dembélé",
+          "goals": 40,
+          "years": "2017–2023",
+          "aliases": [
+            "dembele",
+            "ousmane dembele"
+          ]
+        },
+        {
+          "name": "Romário",
+          "shortName": "Romário",
+          "goals": 39,
+          "years": "1993–1995",
+          "aliases": [
+            "romario"
+          ]
+        },
+        {
+          "name": "Diego Maradona",
+          "shortName": "Maradona",
+          "goals": 38,
+          "years": "1982–1984",
+          "aliases": [
+            "maradona",
+            "diego maradona",
+            "el pibe"
+          ]
+        },
+        {
+          "name": "Ferran Torres",
+          "shortName": "Ferran",
+          "goals": 26,
+          "years": "2022–present",
+          "aliases": [
+            "ferran",
+            "ferran torres"
+          ]
+        },
+        {
+          "name": "Raphinha",
+          "shortName": "Raphinha",
+          "goals": 26,
+          "years": "2022–present",
+          "aliases": [
+            "raphinha"
+          ]
+        },
+        {
+          "name": "Dani Alves",
+          "shortName": "Dani Alves",
+          "goals": 22,
+          "years": "2008–2016",
+          "aliases": [
+            "dani alves",
+            "alves"
+          ]
+        },
+        {
+          "name": "Deco",
+          "shortName": "Deco",
+          "goals": 20,
+          "years": "2004–2008",
+          "aliases": [
+            "deco"
+          ]
+        },
+        {
+          "name": "Sergio Busquets",
+          "shortName": "Busquets",
+          "goals": 18,
+          "years": "2008–2023",
+          "aliases": [
+            "busquets",
+            "sergio busquets"
+          ]
+        },
+        {
+          "name": "Lamine Yamal",
+          "shortName": "Lamine Yamal",
+          "goals": 12,
+          "years": "2023–present",
+          "aliases": [
+            "lamine",
+            "yamal",
+            "lamine yamal"
+          ]
+        }
       ]
     },
     {
@@ -107,41 +782,356 @@
       "badgeColor": "#DA291C",
       "accentColor": "#FBE122",
       "players": [
-        {"name": "Wayne Rooney", "shortName": "Rooney", "goals": 253, "years": "2004–2017", "aliases": ["rooney", "wayne rooney", "wazza"]},
-        {"name": "Sir Bobby Charlton", "shortName": "Charlton", "goals": 249, "years": "1956–1973", "aliases": ["charlton", "bobby charlton"]},
-        {"name": "Denis Law", "shortName": "Law", "goals": 237, "years": "1962–1973", "aliases": ["denis law", "the king"]},
-        {"name": "Jack Rowley", "shortName": "Rowley", "goals": 211, "years": "1937–1955", "aliases": ["jack rowley"]},
-        {"name": "Dennis Viollet", "shortName": "Viollet", "goals": 179, "years": "1953–1962", "aliases": ["dennis viollet"]},
-        {"name": "George Best", "shortName": "Best", "goals": 179, "years": "1963–1974", "aliases": ["george best", "el beatle"]},
-        {"name": "Ryan Giggs", "shortName": "Giggs", "goals": 168, "years": "1991–2014", "aliases": ["giggs", "ryan giggs"]},
-        {"name": "Mark Hughes", "shortName": "Hughes", "goals": 163, "years": "1983–1995", "aliases": ["sparky", "mark hughes"]},
-        {"name": "Paul Scholes", "shortName": "Scholes", "goals": 155, "years": "1994–2013", "aliases": ["scholes", "paul scholes"]},
-        {"name": "Ruud van Nistelrooy", "shortName": "Van Nistelrooy", "goals": 150, "years": "2001–2006", "aliases": ["van nistelrooy", "ruud van nistelrooy"]},
-        {"name": "Cristiano Ronaldo", "shortName": "CR7", "goals": 145, "years": "2003–2009, 2021–2022", "aliases": ["ronaldo", "cr7", "cristiano"]},
-        {"name": "Marcus Rashford", "shortName": "Rashford", "goals": 135, "years": "2015–present", "aliases": ["rashford", "marcus rashford"]},
-        {"name": "Tommy Taylor", "shortName": "Taylor", "goals": 131, "years": "1953–1958", "aliases": ["tommy taylor"]},
-        {"name": "Brian McClair", "shortName": "McClair", "goals": 127, "years": "1987–1998", "aliases": ["mcclair", "choccy"]},
-        {"name": "Ole Gunnar Solskjær", "shortName": "Solskjær", "goals": 126, "years": "1996–2007", "aliases": ["solskjaer", "baby-faced assassin"]},
-        {"name": "Andy Cole", "shortName": "Cole", "goals": 121, "years": "1995–2001", "aliases": ["andy cole", "andrew cole"]},
-        {"name": "Bryan Robson", "shortName": "Robson", "goals": 99, "years": "1981–1994", "aliases": ["captain marvel", "bryan robson"]},
-        {"name": "Anthony Martial", "shortName": "Martial", "goals": 90, "years": "2015–2024", "aliases": ["martial", "anthony martial"]},
-        {"name": "David Beckham", "shortName": "Beckham", "goals": 85, "years": "1992–2003", "aliases": ["beckham", "david beckham", "becks"]},
-        {"name": "Eric Cantona", "shortName": "Cantona", "goals": 82, "years": "1992–1997", "aliases": ["cantona", "king eric", "eric cantona"]},
-        {"name": "Bruno Fernandes", "shortName": "Bruno", "goals": 82, "years": "2020–present", "aliases": ["bruno", "bruno fernandes"]},
-        {"name": "Dwight Yorke", "shortName": "Yorke", "goals": 66, "years": "1998–2002", "aliases": ["dwight yorke", "yorke"]},
-        {"name": "Javier Hernández", "shortName": "Chicharito", "goals": 59, "years": "2010–2015", "aliases": ["chicharito", "javier hernandez"]},
-        {"name": "Robin van Persie", "shortName": "Van Persie", "goals": 58, "years": "2012–2015", "aliases": ["van persie", "rvp"]},
-        {"name": "Dimitar Berbatov", "shortName": "Berbatov", "goals": 56, "years": "2008–2012", "aliases": ["berbatov", "dimitar berbatov"]},
-        {"name": "Roy Keane", "shortName": "Keane", "goals": 51, "years": "1993–2005", "aliases": ["keane", "roy keane"]},
-        {"name": "Juan Mata", "shortName": "Mata", "goals": 51, "years": "2014–2022", "aliases": ["mata", "juan mata"]},
-        {"name": "Romelu Lukaku", "shortName": "Lukaku", "goals": 42, "years": "2017–2019", "aliases": ["lukaku", "romelu lukaku"]},
-        {"name": "Nani", "shortName": "Nani", "goals": 41, "years": "2007–2015", "aliases": ["nani", "luis nani"]},
-        {"name": "Paul Pogba", "shortName": "Pogba", "goals": 39, "years": "2016–2022", "aliases": ["pogba", "paul pogba"]},
-        {"name": "Carlos Tevez", "shortName": "Tevez", "goals": 34, "years": "2007–2009", "aliases": ["tevez", "carlos tevez"]},
-        {"name": "Zlatan Ibrahimović", "shortName": "Ibrahimović", "goals": 29, "years": "2016–2018", "aliases": ["zlatan", "ibrahimovic"]},
-        {"name": "Alejandro Garnacho", "shortName": "Garnacho", "goals": 20, "years": "2022–present", "aliases": ["garnacho"]},
-        {"name": "Edinson Cavani", "shortName": "Cavani", "goals": 19, "years": "2020–2022", "aliases": ["cavani", "el matador"]},
-        {"name": "Rasmus Højlund", "shortName": "Højlund", "goals": 18, "years": "2023–present", "aliases": ["hojlund", "rasmus hojlund"]}
+        {
+          "name": "Wayne Rooney",
+          "shortName": "Rooney",
+          "goals": 253,
+          "years": "2004–2017",
+          "aliases": [
+            "rooney",
+            "wayne rooney",
+            "wazza"
+          ]
+        },
+        {
+          "name": "Sir Bobby Charlton",
+          "shortName": "Charlton",
+          "goals": 249,
+          "years": "1956–1973",
+          "aliases": [
+            "charlton",
+            "bobby charlton"
+          ]
+        },
+        {
+          "name": "Denis Law",
+          "shortName": "Law",
+          "goals": 237,
+          "years": "1962–1973",
+          "aliases": [
+            "denis law",
+            "the king"
+          ]
+        },
+        {
+          "name": "Jack Rowley",
+          "shortName": "Rowley",
+          "goals": 211,
+          "years": "1937–1955",
+          "aliases": [
+            "jack rowley"
+          ]
+        },
+        {
+          "name": "Dennis Viollet",
+          "shortName": "Viollet",
+          "goals": 179,
+          "years": "1953–1962",
+          "aliases": [
+            "dennis viollet"
+          ]
+        },
+        {
+          "name": "George Best",
+          "shortName": "Best",
+          "goals": 179,
+          "years": "1963–1974",
+          "aliases": [
+            "george best",
+            "el beatle"
+          ]
+        },
+        {
+          "name": "Ryan Giggs",
+          "shortName": "Giggs",
+          "goals": 168,
+          "years": "1991–2014",
+          "aliases": [
+            "giggs",
+            "ryan giggs"
+          ]
+        },
+        {
+          "name": "Mark Hughes",
+          "shortName": "Hughes",
+          "goals": 163,
+          "years": "1983–1995",
+          "aliases": [
+            "sparky",
+            "mark hughes"
+          ]
+        },
+        {
+          "name": "Paul Scholes",
+          "shortName": "Scholes",
+          "goals": 155,
+          "years": "1994–2013",
+          "aliases": [
+            "scholes",
+            "paul scholes"
+          ]
+        },
+        {
+          "name": "Ruud van Nistelrooy",
+          "shortName": "Van Nistelrooy",
+          "goals": 150,
+          "years": "2001–2006",
+          "aliases": [
+            "van nistelrooy",
+            "ruud van nistelrooy"
+          ]
+        },
+        {
+          "name": "Cristiano Ronaldo",
+          "shortName": "CR7",
+          "goals": 145,
+          "years": "2003–2009, 2021–2022",
+          "aliases": [
+            "ronaldo",
+            "cr7",
+            "cristiano"
+          ]
+        },
+        {
+          "name": "Marcus Rashford",
+          "shortName": "Rashford",
+          "goals": 135,
+          "years": "2015–present",
+          "aliases": [
+            "rashford",
+            "marcus rashford"
+          ]
+        },
+        {
+          "name": "Tommy Taylor",
+          "shortName": "Taylor",
+          "goals": 131,
+          "years": "1953–1958",
+          "aliases": [
+            "tommy taylor"
+          ]
+        },
+        {
+          "name": "Brian McClair",
+          "shortName": "McClair",
+          "goals": 127,
+          "years": "1987–1998",
+          "aliases": [
+            "mcclair",
+            "choccy"
+          ]
+        },
+        {
+          "name": "Ole Gunnar Solskjær",
+          "shortName": "Solskjær",
+          "goals": 126,
+          "years": "1996–2007",
+          "aliases": [
+            "solskjaer",
+            "baby-faced assassin"
+          ]
+        },
+        {
+          "name": "Andy Cole",
+          "shortName": "Cole",
+          "goals": 121,
+          "years": "1995–2001",
+          "aliases": [
+            "andy cole",
+            "andrew cole"
+          ]
+        },
+        {
+          "name": "Bryan Robson",
+          "shortName": "Robson",
+          "goals": 99,
+          "years": "1981–1994",
+          "aliases": [
+            "captain marvel",
+            "bryan robson"
+          ]
+        },
+        {
+          "name": "Anthony Martial",
+          "shortName": "Martial",
+          "goals": 90,
+          "years": "2015–2024",
+          "aliases": [
+            "martial",
+            "anthony martial"
+          ]
+        },
+        {
+          "name": "David Beckham",
+          "shortName": "Beckham",
+          "goals": 85,
+          "years": "1992–2003",
+          "aliases": [
+            "beckham",
+            "david beckham",
+            "becks"
+          ]
+        },
+        {
+          "name": "Eric Cantona",
+          "shortName": "Cantona",
+          "goals": 82,
+          "years": "1992–1997",
+          "aliases": [
+            "cantona",
+            "king eric",
+            "eric cantona"
+          ]
+        },
+        {
+          "name": "Bruno Fernandes",
+          "shortName": "Bruno",
+          "goals": 82,
+          "years": "2020–present",
+          "aliases": [
+            "bruno",
+            "bruno fernandes"
+          ]
+        },
+        {
+          "name": "Dwight Yorke",
+          "shortName": "Yorke",
+          "goals": 66,
+          "years": "1998–2002",
+          "aliases": [
+            "dwight yorke",
+            "yorke"
+          ]
+        },
+        {
+          "name": "Javier Hernández",
+          "shortName": "Chicharito",
+          "goals": 59,
+          "years": "2010–2015",
+          "aliases": [
+            "chicharito",
+            "javier hernandez"
+          ]
+        },
+        {
+          "name": "Robin van Persie",
+          "shortName": "Van Persie",
+          "goals": 58,
+          "years": "2012–2015",
+          "aliases": [
+            "van persie",
+            "rvp"
+          ]
+        },
+        {
+          "name": "Dimitar Berbatov",
+          "shortName": "Berbatov",
+          "goals": 56,
+          "years": "2008–2012",
+          "aliases": [
+            "berbatov",
+            "dimitar berbatov"
+          ]
+        },
+        {
+          "name": "Roy Keane",
+          "shortName": "Keane",
+          "goals": 51,
+          "years": "1993–2005",
+          "aliases": [
+            "keane",
+            "roy keane"
+          ]
+        },
+        {
+          "name": "Juan Mata",
+          "shortName": "Mata",
+          "goals": 51,
+          "years": "2014–2022",
+          "aliases": [
+            "mata",
+            "juan mata"
+          ]
+        },
+        {
+          "name": "Romelu Lukaku",
+          "shortName": "Lukaku",
+          "goals": 42,
+          "years": "2017–2019",
+          "aliases": [
+            "lukaku",
+            "romelu lukaku"
+          ]
+        },
+        {
+          "name": "Nani",
+          "shortName": "Nani",
+          "goals": 41,
+          "years": "2007–2015",
+          "aliases": [
+            "nani",
+            "luis nani"
+          ]
+        },
+        {
+          "name": "Paul Pogba",
+          "shortName": "Pogba",
+          "goals": 39,
+          "years": "2016–2022",
+          "aliases": [
+            "pogba",
+            "paul pogba"
+          ]
+        },
+        {
+          "name": "Carlos Tevez",
+          "shortName": "Tevez",
+          "goals": 34,
+          "years": "2007–2009",
+          "aliases": [
+            "tevez",
+            "carlos tevez"
+          ]
+        },
+        {
+          "name": "Zlatan Ibrahimović",
+          "shortName": "Ibrahimović",
+          "goals": 29,
+          "years": "2016–2018",
+          "aliases": [
+            "zlatan",
+            "ibrahimovic"
+          ]
+        },
+        {
+          "name": "Alejandro Garnacho",
+          "shortName": "Garnacho",
+          "goals": 20,
+          "years": "2022–present",
+          "aliases": [
+            "garnacho"
+          ]
+        },
+        {
+          "name": "Edinson Cavani",
+          "shortName": "Cavani",
+          "goals": 19,
+          "years": "2020–2022",
+          "aliases": [
+            "cavani",
+            "el matador"
+          ]
+        },
+        {
+          "name": "Rasmus Højlund",
+          "shortName": "Højlund",
+          "goals": 18,
+          "years": "2023–present",
+          "aliases": [
+            "hojlund",
+            "rasmus hojlund"
+          ]
+        }
       ]
     },
     {
@@ -153,34 +1143,285 @@
       "badgeColor": "#DC052D",
       "accentColor": "#0066B2",
       "players": [
-        {"name": "Gerd Müller", "shortName": "Gerd Müller", "goals": 563, "years": "1964–1979", "aliases": ["gerd muller", "der bomber"]},
-        {"name": "Robert Lewandowski", "shortName": "Lewandowski", "goals": 344, "years": "2014–2022", "aliases": ["lewandowski", "lewy"]},
-        {"name": "Thomas Müller", "shortName": "Müller", "goals": 245, "years": "2008–present", "aliases": ["muller", "thomas muller", "radio muller"]},
-        {"name": "Karl-Heinz Rummenigge", "shortName": "Rummenigge", "goals": 217, "years": "1974–1984", "aliases": ["rummenigge", "kalle"]},
-        {"name": "Roland Wohlfarth", "shortName": "Wohlfarth", "goals": 155, "years": "1984–1993", "aliases": ["wohlfarth"]},
-        {"name": "Dieter Hoeneß", "shortName": "Dieter Hoeneß", "goals": 145, "years": "1979–1987", "aliases": ["dieter hoeness", "hoeness"]},
-        {"name": "Arjen Robben", "shortName": "Robben", "goals": 144, "years": "2009–2019", "aliases": ["robben", "arjen robben"]},
-        {"name": "Giovane Élber", "shortName": "Élber", "goals": 139, "years": "1997–2003", "aliases": ["elber", "giovane elber"]},
-        {"name": "Claudio Pizarro", "shortName": "Pizarro", "goals": 125, "years": "2001–2007, 2012–2015", "aliases": ["pizarro", "el bombardero"]},
-        {"name": "Franck Ribéry", "shortName": "Ribéry", "goals": 124, "years": "2007–2019", "aliases": ["ribery", "franck ribery"]},
-        {"name": "Lothar Matthäus", "shortName": "Matthäus", "goals": 121, "years": "1984–2000", "aliases": ["matthaus", "lothar matthaus"]},
-        {"name": "Mehmet Scholl", "shortName": "Scholl", "goals": 117, "years": "1992–2007", "aliases": ["scholl", "mehmet scholl"]},
-        {"name": "Mario Gomez", "shortName": "Gomez", "goals": 113, "years": "2009–2013", "aliases": ["gomez", "mario gomez"]},
-        {"name": "Roy Makaay", "shortName": "Makaay", "goals": 103, "years": "2003–2007", "aliases": ["makaay", "das phantom"]},
-        {"name": "Serge Gnabry", "shortName": "Gnabry", "goals": 88, "years": "2018–present", "aliases": ["gnabry", "serge gnabry"]},
-        {"name": "Bastian Schweinsteiger", "shortName": "Schweinsteiger", "goals": 68, "years": "2002–2015", "aliases": ["schweinsteiger", "basti"]},
-        {"name": "Kingsley Coman", "shortName": "Coman", "goals": 65, "years": "2015–present", "aliases": ["coman", "kingsley coman"]},
-        {"name": "Michael Ballack", "shortName": "Ballack", "goals": 62, "years": "2002–2006", "aliases": ["ballack", "michael ballack"]},
-        {"name": "Luca Toni", "shortName": "Toni", "goals": 58, "years": "2007–2010", "aliases": ["toni", "luca toni"]},
-        {"name": "Harry Kane", "shortName": "Kane", "goals": 54, "years": "2023–present", "aliases": ["kane", "harry kane"]},
-        {"name": "Miroslav Klose", "shortName": "Klose", "goals": 53, "years": "2007–2011", "aliases": ["klose", "miroslav klose"]},
-        {"name": "Leroy Sané", "shortName": "Sané", "goals": 50, "years": "2020–present", "aliases": ["sane", "leroy sane"]},
-        {"name": "Mario Mandžukić", "shortName": "Mandžukić", "goals": 48, "years": "2012–2014", "aliases": ["mandzukic", "mario mandzukic"]},
-        {"name": "Jamal Musiala", "shortName": "Musiala", "goals": 47, "years": "2020–present", "aliases": ["musiala", "bambi"]},
-        {"name": "Joshua Kimmich", "shortName": "Kimmich", "goals": 42, "years": "2015–present", "aliases": ["kimmich", "joshua kimmich"]},
-        {"name": "Leon Goretzka", "shortName": "Goretzka", "goals": 41, "years": "2018–present", "aliases": ["goretzka"]},
-        {"name": "David Alaba", "shortName": "Alaba", "goals": 33, "years": "2010–2021", "aliases": ["alaba", "david alaba"]},
-        {"name": "Philipp Lahm", "shortName": "Lahm", "goals": 16, "years": "2002–2017", "aliases": ["lahm", "philipp lahm"]}
+        {
+          "name": "Gerd Müller",
+          "shortName": "Gerd Müller",
+          "goals": 563,
+          "years": "1964–1979",
+          "aliases": [
+            "gerd muller",
+            "der bomber"
+          ]
+        },
+        {
+          "name": "Robert Lewandowski",
+          "shortName": "Lewandowski",
+          "goals": 344,
+          "years": "2014–2022",
+          "aliases": [
+            "lewandowski",
+            "lewy"
+          ]
+        },
+        {
+          "name": "Thomas Müller",
+          "shortName": "Müller",
+          "goals": 245,
+          "years": "2008–present",
+          "aliases": [
+            "muller",
+            "thomas muller",
+            "radio muller"
+          ]
+        },
+        {
+          "name": "Karl-Heinz Rummenigge",
+          "shortName": "Rummenigge",
+          "goals": 217,
+          "years": "1974–1984",
+          "aliases": [
+            "rummenigge",
+            "kalle"
+          ]
+        },
+        {
+          "name": "Roland Wohlfarth",
+          "shortName": "Wohlfarth",
+          "goals": 155,
+          "years": "1984–1993",
+          "aliases": [
+            "wohlfarth"
+          ]
+        },
+        {
+          "name": "Dieter Hoeneß",
+          "shortName": "Dieter Hoeneß",
+          "goals": 145,
+          "years": "1979–1987",
+          "aliases": [
+            "dieter hoeness",
+            "hoeness"
+          ]
+        },
+        {
+          "name": "Arjen Robben",
+          "shortName": "Robben",
+          "goals": 144,
+          "years": "2009–2019",
+          "aliases": [
+            "robben",
+            "arjen robben"
+          ]
+        },
+        {
+          "name": "Giovane Élber",
+          "shortName": "Élber",
+          "goals": 139,
+          "years": "1997–2003",
+          "aliases": [
+            "elber",
+            "giovane elber"
+          ]
+        },
+        {
+          "name": "Claudio Pizarro",
+          "shortName": "Pizarro",
+          "goals": 125,
+          "years": "2001–2007, 2012–2015",
+          "aliases": [
+            "pizarro",
+            "el bombardero"
+          ]
+        },
+        {
+          "name": "Franck Ribéry",
+          "shortName": "Ribéry",
+          "goals": 124,
+          "years": "2007–2019",
+          "aliases": [
+            "ribery",
+            "franck ribery"
+          ]
+        },
+        {
+          "name": "Lothar Matthäus",
+          "shortName": "Matthäus",
+          "goals": 121,
+          "years": "1984–2000",
+          "aliases": [
+            "matthaus",
+            "lothar matthaus"
+          ]
+        },
+        {
+          "name": "Mehmet Scholl",
+          "shortName": "Scholl",
+          "goals": 117,
+          "years": "1992–2007",
+          "aliases": [
+            "scholl",
+            "mehmet scholl"
+          ]
+        },
+        {
+          "name": "Mario Gomez",
+          "shortName": "Gomez",
+          "goals": 113,
+          "years": "2009–2013",
+          "aliases": [
+            "gomez",
+            "mario gomez"
+          ]
+        },
+        {
+          "name": "Roy Makaay",
+          "shortName": "Makaay",
+          "goals": 103,
+          "years": "2003–2007",
+          "aliases": [
+            "makaay",
+            "das phantom"
+          ]
+        },
+        {
+          "name": "Serge Gnabry",
+          "shortName": "Gnabry",
+          "goals": 88,
+          "years": "2018–present",
+          "aliases": [
+            "gnabry",
+            "serge gnabry"
+          ]
+        },
+        {
+          "name": "Bastian Schweinsteiger",
+          "shortName": "Schweinsteiger",
+          "goals": 68,
+          "years": "2002–2015",
+          "aliases": [
+            "schweinsteiger",
+            "basti"
+          ]
+        },
+        {
+          "name": "Kingsley Coman",
+          "shortName": "Coman",
+          "goals": 65,
+          "years": "2015–present",
+          "aliases": [
+            "coman",
+            "kingsley coman"
+          ]
+        },
+        {
+          "name": "Michael Ballack",
+          "shortName": "Ballack",
+          "goals": 62,
+          "years": "2002–2006",
+          "aliases": [
+            "ballack",
+            "michael ballack"
+          ]
+        },
+        {
+          "name": "Luca Toni",
+          "shortName": "Toni",
+          "goals": 58,
+          "years": "2007–2010",
+          "aliases": [
+            "toni",
+            "luca toni"
+          ]
+        },
+        {
+          "name": "Harry Kane",
+          "shortName": "Kane",
+          "goals": 54,
+          "years": "2023–present",
+          "aliases": [
+            "kane",
+            "harry kane"
+          ]
+        },
+        {
+          "name": "Miroslav Klose",
+          "shortName": "Klose",
+          "goals": 53,
+          "years": "2007–2011",
+          "aliases": [
+            "klose",
+            "miroslav klose"
+          ]
+        },
+        {
+          "name": "Leroy Sané",
+          "shortName": "Sané",
+          "goals": 50,
+          "years": "2020–present",
+          "aliases": [
+            "sane",
+            "leroy sane"
+          ]
+        },
+        {
+          "name": "Mario Mandžukić",
+          "shortName": "Mandžukić",
+          "goals": 48,
+          "years": "2012–2014",
+          "aliases": [
+            "mandzukic",
+            "mario mandzukic"
+          ]
+        },
+        {
+          "name": "Jamal Musiala",
+          "shortName": "Musiala",
+          "goals": 47,
+          "years": "2020–present",
+          "aliases": [
+            "musiala",
+            "bambi"
+          ]
+        },
+        {
+          "name": "Joshua Kimmich",
+          "shortName": "Kimmich",
+          "goals": 42,
+          "years": "2015–present",
+          "aliases": [
+            "kimmich",
+            "joshua kimmich"
+          ]
+        },
+        {
+          "name": "Leon Goretzka",
+          "shortName": "Goretzka",
+          "goals": 41,
+          "years": "2018–present",
+          "aliases": [
+            "goretzka"
+          ]
+        },
+        {
+          "name": "David Alaba",
+          "shortName": "Alaba",
+          "goals": 33,
+          "years": "2010–2021",
+          "aliases": [
+            "alaba",
+            "david alaba"
+          ]
+        },
+        {
+          "name": "Philipp Lahm",
+          "shortName": "Lahm",
+          "goals": 16,
+          "years": "2002–2017",
+          "aliases": [
+            "lahm",
+            "philipp lahm"
+          ]
+        }
       ]
     },
     {
@@ -192,35 +1433,291 @@
       "badgeColor": "#C8102E",
       "accentColor": "#00B2A9",
       "players": [
-        {"name": "Ian Rush", "shortName": "Rush", "goals": 346, "years": "1980–1996", "aliases": ["ian rush", "rushy"]},
-        {"name": "Roger Hunt", "shortName": "Hunt", "goals": 285, "years": "1958–1969", "aliases": ["roger hunt", "sir roger"]},
-        {"name": "Gordon Hodgson", "shortName": "Hodgson", "goals": 241, "years": "1925–1936", "aliases": ["gordon hodgson"]},
-        {"name": "Billy Liddell", "shortName": "Liddell", "goals": 228, "years": "1938–1961", "aliases": ["billy liddell"]},
-        {"name": "Mohamed Salah", "shortName": "Salah", "goals": 218, "years": "2017–present", "aliases": ["salah", "mo salah", "egyptian king"]},
-        {"name": "Steven Gerrard", "shortName": "Gerrard", "goals": 186, "years": "1998–2015", "aliases": ["gerrard", "stevie g"]},
-        {"name": "Robbie Fowler", "shortName": "Fowler", "goals": 183, "years": "1993–2007", "aliases": ["fowler", "god", "robbie fowler"]},
-        {"name": "Kenny Dalglish", "shortName": "Dalglish", "goals": 172, "years": "1977–1990", "aliases": ["dalglish", "king kenny"]},
-        {"name": "Michael Owen", "shortName": "Owen", "goals": 158, "years": "1996–2004", "aliases": ["owen", "michael owen"]},
-        {"name": "Harry Chambers", "shortName": "Chambers", "goals": 151, "years": "1915–1928", "aliases": ["harry chambers"]},
-        {"name": "Sadio Mané", "shortName": "Mané", "goals": 120, "years": "2016–2022", "aliases": ["mane", "sadio mane"]},
-        {"name": "Ian St John", "shortName": "St John", "goals": 118, "years": "1961–1971", "aliases": ["ian st john"]},
-        {"name": "Roberto Firmino", "shortName": "Firmino", "goals": 111, "years": "2015–2023", "aliases": ["firmino", "bobby", "bobby firmino"]},
-        {"name": "John Barnes", "shortName": "Barnes", "goals": 108, "years": "1987–1997", "aliases": ["john barnes", "barnes"]},
-        {"name": "Kevin Keegan", "shortName": "Keegan", "goals": 100, "years": "1971–1977", "aliases": ["keegan", "kevin keegan"]},
-        {"name": "John Toshack", "shortName": "Toshack", "goals": 96, "years": "1970–1978", "aliases": ["toshack"]},
-        {"name": "Luis Suárez", "shortName": "Suárez", "goals": 82, "years": "2011–2014", "aliases": ["suarez", "luis suarez"]},
-        {"name": "Fernando Torres", "shortName": "Torres", "goals": 81, "years": "2007–2011", "aliases": ["torres", "el nino"]},
-        {"name": "Ray Kennedy", "shortName": "Kennedy", "goals": 72, "years": "1974–1982", "aliases": ["ray kennedy"]},
-        {"name": "Dirk Kuyt", "shortName": "Kuyt", "goals": 71, "years": "2006–2012", "aliases": ["kuyt", "dirk kuyt"]},
-        {"name": "Daniel Sturridge", "shortName": "Sturridge", "goals": 67, "years": "2013–2019", "aliases": ["sturridge"]},
-        {"name": "Diogo Jota", "shortName": "Jota", "goals": 60, "years": "2020–present", "aliases": ["jota", "diogo jota"]},
-        {"name": "Philippe Coutinho", "shortName": "Coutinho", "goals": 54, "years": "2013–2018", "aliases": ["coutinho"]},
-        {"name": "Darwin Núñez", "shortName": "Núñez", "goals": 35, "years": "2022–present", "aliases": ["nunez", "darwin nunez"]},
-        {"name": "Jordan Henderson", "shortName": "Henderson", "goals": 33, "years": "2011–2023", "aliases": ["henderson", "jordan henderson"]},
-        {"name": "Luis Díaz", "shortName": "Díaz", "goals": 30, "years": "2022–present", "aliases": ["luis diaz", "diaz"]},
-        {"name": "James Milner", "shortName": "Milner", "goals": 26, "years": "2015–2023", "aliases": ["milner", "james milner"]},
-        {"name": "Virgil van Dijk", "shortName": "Van Dijk", "goals": 24, "years": "2018–present", "aliases": ["van dijk", "virgil"]},
-        {"name": "Xabi Alonso", "shortName": "Alonso", "goals": 19, "years": "2004–2009", "aliases": ["xabi alonso", "alonso"]}
+        {
+          "name": "Ian Rush",
+          "shortName": "Rush",
+          "goals": 346,
+          "years": "1980–1996",
+          "aliases": [
+            "ian rush",
+            "rushy"
+          ]
+        },
+        {
+          "name": "Roger Hunt",
+          "shortName": "Hunt",
+          "goals": 285,
+          "years": "1958–1969",
+          "aliases": [
+            "roger hunt",
+            "sir roger"
+          ]
+        },
+        {
+          "name": "Gordon Hodgson",
+          "shortName": "Hodgson",
+          "goals": 241,
+          "years": "1925–1936",
+          "aliases": [
+            "gordon hodgson"
+          ]
+        },
+        {
+          "name": "Billy Liddell",
+          "shortName": "Liddell",
+          "goals": 228,
+          "years": "1938–1961",
+          "aliases": [
+            "billy liddell"
+          ]
+        },
+        {
+          "name": "Mohamed Salah",
+          "shortName": "Salah",
+          "goals": 218,
+          "years": "2017–present",
+          "aliases": [
+            "salah",
+            "mo salah",
+            "egyptian king"
+          ]
+        },
+        {
+          "name": "Steven Gerrard",
+          "shortName": "Gerrard",
+          "goals": 186,
+          "years": "1998–2015",
+          "aliases": [
+            "gerrard",
+            "stevie g"
+          ]
+        },
+        {
+          "name": "Robbie Fowler",
+          "shortName": "Fowler",
+          "goals": 183,
+          "years": "1993–2007",
+          "aliases": [
+            "fowler",
+            "god",
+            "robbie fowler"
+          ]
+        },
+        {
+          "name": "Kenny Dalglish",
+          "shortName": "Dalglish",
+          "goals": 172,
+          "years": "1977–1990",
+          "aliases": [
+            "dalglish",
+            "king kenny"
+          ]
+        },
+        {
+          "name": "Michael Owen",
+          "shortName": "Owen",
+          "goals": 158,
+          "years": "1996–2004",
+          "aliases": [
+            "owen",
+            "michael owen"
+          ]
+        },
+        {
+          "name": "Harry Chambers",
+          "shortName": "Chambers",
+          "goals": 151,
+          "years": "1915–1928",
+          "aliases": [
+            "harry chambers"
+          ]
+        },
+        {
+          "name": "Sadio Mané",
+          "shortName": "Mané",
+          "goals": 120,
+          "years": "2016–2022",
+          "aliases": [
+            "mane",
+            "sadio mane"
+          ]
+        },
+        {
+          "name": "Ian St John",
+          "shortName": "St John",
+          "goals": 118,
+          "years": "1961–1971",
+          "aliases": [
+            "ian st john"
+          ]
+        },
+        {
+          "name": "Roberto Firmino",
+          "shortName": "Firmino",
+          "goals": 111,
+          "years": "2015–2023",
+          "aliases": [
+            "firmino",
+            "bobby",
+            "bobby firmino"
+          ]
+        },
+        {
+          "name": "John Barnes",
+          "shortName": "Barnes",
+          "goals": 108,
+          "years": "1987–1997",
+          "aliases": [
+            "john barnes",
+            "barnes"
+          ]
+        },
+        {
+          "name": "Kevin Keegan",
+          "shortName": "Keegan",
+          "goals": 100,
+          "years": "1971–1977",
+          "aliases": [
+            "keegan",
+            "kevin keegan"
+          ]
+        },
+        {
+          "name": "John Toshack",
+          "shortName": "Toshack",
+          "goals": 96,
+          "years": "1970–1978",
+          "aliases": [
+            "toshack"
+          ]
+        },
+        {
+          "name": "Luis Suárez",
+          "shortName": "Suárez",
+          "goals": 82,
+          "years": "2011–2014",
+          "aliases": [
+            "suarez",
+            "luis suarez"
+          ]
+        },
+        {
+          "name": "Fernando Torres",
+          "shortName": "Torres",
+          "goals": 81,
+          "years": "2007–2011",
+          "aliases": [
+            "torres",
+            "el nino"
+          ]
+        },
+        {
+          "name": "Ray Kennedy",
+          "shortName": "Kennedy",
+          "goals": 72,
+          "years": "1974–1982",
+          "aliases": [
+            "ray kennedy"
+          ]
+        },
+        {
+          "name": "Dirk Kuyt",
+          "shortName": "Kuyt",
+          "goals": 71,
+          "years": "2006–2012",
+          "aliases": [
+            "kuyt",
+            "dirk kuyt"
+          ]
+        },
+        {
+          "name": "Daniel Sturridge",
+          "shortName": "Sturridge",
+          "goals": 67,
+          "years": "2013–2019",
+          "aliases": [
+            "sturridge"
+          ]
+        },
+        {
+          "name": "Diogo Jota",
+          "shortName": "Jota",
+          "goals": 60,
+          "years": "2020–present",
+          "aliases": [
+            "jota",
+            "diogo jota"
+          ]
+        },
+        {
+          "name": "Philippe Coutinho",
+          "shortName": "Coutinho",
+          "goals": 54,
+          "years": "2013–2018",
+          "aliases": [
+            "coutinho"
+          ]
+        },
+        {
+          "name": "Darwin Núñez",
+          "shortName": "Núñez",
+          "goals": 35,
+          "years": "2022–present",
+          "aliases": [
+            "nunez",
+            "darwin nunez"
+          ]
+        },
+        {
+          "name": "Jordan Henderson",
+          "shortName": "Henderson",
+          "goals": 33,
+          "years": "2011–2023",
+          "aliases": [
+            "henderson",
+            "jordan henderson"
+          ]
+        },
+        {
+          "name": "Luis Díaz",
+          "shortName": "Díaz",
+          "goals": 30,
+          "years": "2022–present",
+          "aliases": [
+            "luis diaz",
+            "diaz"
+          ]
+        },
+        {
+          "name": "James Milner",
+          "shortName": "Milner",
+          "goals": 26,
+          "years": "2015–2023",
+          "aliases": [
+            "milner",
+            "james milner"
+          ]
+        },
+        {
+          "name": "Virgil van Dijk",
+          "shortName": "Van Dijk",
+          "goals": 24,
+          "years": "2018–present",
+          "aliases": [
+            "van dijk",
+            "virgil"
+          ]
+        },
+        {
+          "name": "Xabi Alonso",
+          "shortName": "Alonso",
+          "goals": 19,
+          "years": "2004–2009",
+          "aliases": [
+            "xabi alonso",
+            "alonso"
+          ]
+        }
       ]
     },
     {
@@ -232,33 +1729,269 @@
       "badgeColor": "#EF0107",
       "accentColor": "#063672",
       "players": [
-        {"name": "Thierry Henry", "shortName": "Henry", "goals": 228, "years": "1999–2007, 2012", "aliases": ["henry", "thierry henry", "king henry"]},
-        {"name": "Ian Wright", "shortName": "Wright", "goals": 185, "years": "1991–1998", "aliases": ["ian wright", "wrighty"]},
-        {"name": "Cliff Bastin", "shortName": "Bastin", "goals": 178, "years": "1929–1946", "aliases": ["cliff bastin", "boy bastin"]},
-        {"name": "John Radford", "shortName": "Radford", "goals": 149, "years": "1964–1976", "aliases": ["john radford"]},
-        {"name": "Jimmy Brain", "shortName": "Brain", "goals": 139, "years": "1923–1931", "aliases": ["jimmy brain"]},
-        {"name": "Ted Drake", "shortName": "Drake", "goals": 139, "years": "1934–1945", "aliases": ["ted drake"]},
-        {"name": "Robin van Persie", "shortName": "Van Persie", "goals": 132, "years": "2004–2012", "aliases": ["van persie", "rvp"]},
-        {"name": "Dennis Bergkamp", "shortName": "Bergkamp", "goals": 120, "years": "1995–2006", "aliases": ["bergkamp", "the iceman"]},
-        {"name": "Alan Smith", "shortName": "Smith", "goals": 115, "years": "1987–1995", "aliases": ["alan smith", "smudger"]},
-        {"name": "Theo Walcott", "shortName": "Walcott", "goals": 108, "years": "2006–2018", "aliases": ["walcott", "theo walcott"]},
-        {"name": "Olivier Giroud", "shortName": "Giroud", "goals": 105, "years": "2012–2018", "aliases": ["giroud", "olivier giroud"]},
-        {"name": "Pierre-Emerick Aubameyang", "shortName": "Aubameyang", "goals": 92, "years": "2018–2022", "aliases": ["auba", "aubameyang"]},
-        {"name": "Robert Pires", "shortName": "Pires", "goals": 84, "years": "2000–2006", "aliases": ["pires", "robert pires"]},
-        {"name": "Alexis Sánchez", "shortName": "Alexis", "goals": 80, "years": "2014–2018", "aliases": ["alexis", "alexis sanchez"]},
-        {"name": "Alexandre Lacazette", "shortName": "Lacazette", "goals": 71, "years": "2017–2022", "aliases": ["lacazette", "laca"]},
-        {"name": "Freddie Ljungberg", "shortName": "Ljungberg", "goals": 72, "years": "1998–2007", "aliases": ["ljungberg", "freddie"]},
-        {"name": "Aaron Ramsey", "shortName": "Ramsey", "goals": 65, "years": "2008–2019", "aliases": ["ramsey", "aaron ramsey"]},
-        {"name": "Bukayo Saka", "shortName": "Saka", "goals": 61, "years": "2018–present", "aliases": ["saka", "starboy"]},
-        {"name": "Cesc Fàbregas", "shortName": "Fàbregas", "goals": 57, "years": "2003–2011", "aliases": ["fabregas", "cesc"]},
-        {"name": "Sylvain Wiltord", "shortName": "Wiltord", "goals": 49, "years": "2000–2004", "aliases": ["wiltord"]},
-        {"name": "Mesut Özil", "shortName": "Özil", "goals": 44, "years": "2013–2021", "aliases": ["ozil", "mesut ozil"]},
-        {"name": "Nwankwo Kanu", "shortName": "Kanu", "goals": 44, "years": "1999–2004", "aliases": ["kanu"]},
-        {"name": "Gabriel Martinelli", "shortName": "Martinelli", "goals": 43, "years": "2019–present", "aliases": ["martinelli"]},
-        {"name": "Marc Overmars", "shortName": "Overmars", "goals": 41, "years": "1997–2000", "aliases": ["overmars"]},
-        {"name": "Martin Ødegaard", "shortName": "Ødegaard", "goals": 36, "years": "2021–present", "aliases": ["odegaard", "martin odegaard"]},
-        {"name": "Patrick Vieira", "shortName": "Vieira", "goals": 34, "years": "1996–2005", "aliases": ["vieira", "patrick vieira"]},
-        {"name": "Nicolas Anelka", "shortName": "Anelka", "goals": 28, "years": "1997–1999", "aliases": ["anelka"]}
+        {
+          "name": "Thierry Henry",
+          "shortName": "Henry",
+          "goals": 228,
+          "years": "1999–2007, 2012",
+          "aliases": [
+            "henry",
+            "thierry henry",
+            "king henry"
+          ]
+        },
+        {
+          "name": "Ian Wright",
+          "shortName": "Wright",
+          "goals": 185,
+          "years": "1991–1998",
+          "aliases": [
+            "ian wright",
+            "wrighty"
+          ]
+        },
+        {
+          "name": "Cliff Bastin",
+          "shortName": "Bastin",
+          "goals": 178,
+          "years": "1929–1946",
+          "aliases": [
+            "cliff bastin",
+            "boy bastin"
+          ]
+        },
+        {
+          "name": "John Radford",
+          "shortName": "Radford",
+          "goals": 149,
+          "years": "1964–1976",
+          "aliases": [
+            "john radford"
+          ]
+        },
+        {
+          "name": "Jimmy Brain",
+          "shortName": "Brain",
+          "goals": 139,
+          "years": "1923–1931",
+          "aliases": [
+            "jimmy brain"
+          ]
+        },
+        {
+          "name": "Ted Drake",
+          "shortName": "Drake",
+          "goals": 139,
+          "years": "1934–1945",
+          "aliases": [
+            "ted drake"
+          ]
+        },
+        {
+          "name": "Robin van Persie",
+          "shortName": "Van Persie",
+          "goals": 132,
+          "years": "2004–2012",
+          "aliases": [
+            "van persie",
+            "rvp"
+          ]
+        },
+        {
+          "name": "Dennis Bergkamp",
+          "shortName": "Bergkamp",
+          "goals": 120,
+          "years": "1995–2006",
+          "aliases": [
+            "bergkamp",
+            "the iceman"
+          ]
+        },
+        {
+          "name": "Alan Smith",
+          "shortName": "Smith",
+          "goals": 115,
+          "years": "1987–1995",
+          "aliases": [
+            "alan smith",
+            "smudger"
+          ]
+        },
+        {
+          "name": "Theo Walcott",
+          "shortName": "Walcott",
+          "goals": 108,
+          "years": "2006–2018",
+          "aliases": [
+            "walcott",
+            "theo walcott"
+          ]
+        },
+        {
+          "name": "Olivier Giroud",
+          "shortName": "Giroud",
+          "goals": 105,
+          "years": "2012–2018",
+          "aliases": [
+            "giroud",
+            "olivier giroud"
+          ]
+        },
+        {
+          "name": "Pierre-Emerick Aubameyang",
+          "shortName": "Aubameyang",
+          "goals": 92,
+          "years": "2018–2022",
+          "aliases": [
+            "auba",
+            "aubameyang"
+          ]
+        },
+        {
+          "name": "Robert Pires",
+          "shortName": "Pires",
+          "goals": 84,
+          "years": "2000–2006",
+          "aliases": [
+            "pires",
+            "robert pires"
+          ]
+        },
+        {
+          "name": "Alexis Sánchez",
+          "shortName": "Alexis",
+          "goals": 80,
+          "years": "2014–2018",
+          "aliases": [
+            "alexis",
+            "alexis sanchez"
+          ]
+        },
+        {
+          "name": "Alexandre Lacazette",
+          "shortName": "Lacazette",
+          "goals": 71,
+          "years": "2017–2022",
+          "aliases": [
+            "lacazette",
+            "laca"
+          ]
+        },
+        {
+          "name": "Freddie Ljungberg",
+          "shortName": "Ljungberg",
+          "goals": 72,
+          "years": "1998–2007",
+          "aliases": [
+            "ljungberg",
+            "freddie"
+          ]
+        },
+        {
+          "name": "Aaron Ramsey",
+          "shortName": "Ramsey",
+          "goals": 65,
+          "years": "2008–2019",
+          "aliases": [
+            "ramsey",
+            "aaron ramsey"
+          ]
+        },
+        {
+          "name": "Bukayo Saka",
+          "shortName": "Saka",
+          "goals": 61,
+          "years": "2018–present",
+          "aliases": [
+            "saka",
+            "starboy"
+          ]
+        },
+        {
+          "name": "Cesc Fàbregas",
+          "shortName": "Fàbregas",
+          "goals": 57,
+          "years": "2003–2011",
+          "aliases": [
+            "fabregas",
+            "cesc"
+          ]
+        },
+        {
+          "name": "Sylvain Wiltord",
+          "shortName": "Wiltord",
+          "goals": 49,
+          "years": "2000–2004",
+          "aliases": [
+            "wiltord"
+          ]
+        },
+        {
+          "name": "Mesut Özil",
+          "shortName": "Özil",
+          "goals": 44,
+          "years": "2013–2021",
+          "aliases": [
+            "ozil",
+            "mesut ozil"
+          ]
+        },
+        {
+          "name": "Nwankwo Kanu",
+          "shortName": "Kanu",
+          "goals": 44,
+          "years": "1999–2004",
+          "aliases": [
+            "kanu"
+          ]
+        },
+        {
+          "name": "Gabriel Martinelli",
+          "shortName": "Martinelli",
+          "goals": 43,
+          "years": "2019–present",
+          "aliases": [
+            "martinelli"
+          ]
+        },
+        {
+          "name": "Marc Overmars",
+          "shortName": "Overmars",
+          "goals": 41,
+          "years": "1997–2000",
+          "aliases": [
+            "overmars"
+          ]
+        },
+        {
+          "name": "Martin Ødegaard",
+          "shortName": "Ødegaard",
+          "goals": 36,
+          "years": "2021–present",
+          "aliases": [
+            "odegaard",
+            "martin odegaard"
+          ]
+        },
+        {
+          "name": "Patrick Vieira",
+          "shortName": "Vieira",
+          "goals": 34,
+          "years": "1996–2005",
+          "aliases": [
+            "vieira",
+            "patrick vieira"
+          ]
+        },
+        {
+          "name": "Nicolas Anelka",
+          "shortName": "Anelka",
+          "goals": 28,
+          "years": "1997–1999",
+          "aliases": [
+            "anelka"
+          ]
+        }
       ]
     },
     {
@@ -270,34 +2003,277 @@
       "badgeColor": "#034694",
       "accentColor": "#EE242C",
       "players": [
-        {"name": "Frank Lampard", "shortName": "Lampard", "goals": 211, "years": "2001–2014", "aliases": ["lampard", "super frank"]},
-        {"name": "Bobby Tambling", "shortName": "Tambling", "goals": 202, "years": "1959–1970", "aliases": ["bobby tambling"]},
-        {"name": "Kerry Dixon", "shortName": "Dixon", "goals": 193, "years": "1983–1992", "aliases": ["kerry dixon"]},
-        {"name": "Didier Drogba", "shortName": "Drogba", "goals": 164, "years": "2004–2015", "aliases": ["drogba", "didier drogba", "king didier"]},
-        {"name": "Roy Bentley", "shortName": "Bentley", "goals": 150, "years": "1948–1956", "aliases": ["roy bentley"]},
-        {"name": "Peter Osgood", "shortName": "Osgood", "goals": 150, "years": "1964–1979", "aliases": ["osgood", "king of stamford bridge"]},
-        {"name": "Jimmy Greaves", "shortName": "Greaves", "goals": 132, "years": "1957–1961", "aliases": ["jimmy greaves", "greavsie"]},
-        {"name": "Eden Hazard", "shortName": "Hazard", "goals": 110, "years": "2012–2019", "aliases": ["hazard", "eden hazard"]},
-        {"name": "Gianfranco Zola", "shortName": "Zola", "goals": 80, "years": "1996–2003", "aliases": ["zola", "gianfranco zola"]},
-        {"name": "Eiður Guðjohnsen", "shortName": "Guðjohnsen", "goals": 78, "years": "2000–2006", "aliases": ["gudjohnsen", "eidur gudjohnsen"]},
-        {"name": "John Terry", "shortName": "Terry", "goals": 67, "years": "1998–2017", "aliases": ["terry", "captain leader legend"]},
-        {"name": "Willian", "shortName": "Willian", "goals": 63, "years": "2013–2020", "aliases": ["willian"]},
-        {"name": "Salomon Kalou", "shortName": "Kalou", "goals": 60, "years": "2006–2012", "aliases": ["kalou", "salomon kalou"]},
-        {"name": "Diego Costa", "shortName": "Costa", "goals": 59, "years": "2014–2017", "aliases": ["diego costa", "costa"]},
-        {"name": "Nicolas Anelka", "shortName": "Anelka", "goals": 59, "years": "2008–2012", "aliases": ["anelka"]},
-        {"name": "Fernando Torres", "shortName": "Torres", "goals": 45, "years": "2011–2014", "aliases": ["torres", "el nino"]},
-        {"name": "Florent Malouda", "shortName": "Malouda", "goals": 45, "years": "2007–2013", "aliases": ["malouda"]},
-        {"name": "Pedro", "shortName": "Pedro", "goals": 43, "years": "2015–2020", "aliases": ["pedro"]},
-        {"name": "Oscar", "shortName": "Oscar", "goals": 38, "years": "2012–2017", "aliases": ["oscar"]},
-        {"name": "Ramires", "shortName": "Ramires", "goals": 34, "years": "2010–2016", "aliases": ["ramires"]},
-        {"name": "Mason Mount", "shortName": "Mount", "goals": 33, "years": "2019–2023", "aliases": ["mount", "mason mount"]},
-        {"name": "Juan Mata", "shortName": "Mata", "goals": 32, "years": "2011–2014", "aliases": ["mata", "juan mata"]},
-        {"name": "Kai Havertz", "shortName": "Havertz", "goals": 32, "years": "2020–2023", "aliases": ["havertz", "kai havertz"]},
-        {"name": "Cole Palmer", "shortName": "Palmer", "goals": 31, "years": "2023–present", "aliases": ["palmer", "cold palmer", "cole palmer"]},
-        {"name": "Michael Ballack", "shortName": "Ballack", "goals": 26, "years": "2006–2010", "aliases": ["ballack"]},
-        {"name": "Michael Essien", "shortName": "Essien", "goals": 25, "years": "2005–2014", "aliases": ["essien", "the bison"]},
-        {"name": "Hernán Crespo", "shortName": "Crespo", "goals": 25, "years": "2003–2008", "aliases": ["crespo", "hernan crespo"]},
-        {"name": "Arjen Robben", "shortName": "Robben", "goals": 19, "years": "2004–2007", "aliases": ["robben"]}
+        {
+          "name": "Frank Lampard",
+          "shortName": "Lampard",
+          "goals": 211,
+          "years": "2001–2014",
+          "aliases": [
+            "lampard",
+            "super frank"
+          ]
+        },
+        {
+          "name": "Bobby Tambling",
+          "shortName": "Tambling",
+          "goals": 202,
+          "years": "1959–1970",
+          "aliases": [
+            "bobby tambling"
+          ]
+        },
+        {
+          "name": "Kerry Dixon",
+          "shortName": "Dixon",
+          "goals": 193,
+          "years": "1983–1992",
+          "aliases": [
+            "kerry dixon"
+          ]
+        },
+        {
+          "name": "Didier Drogba",
+          "shortName": "Drogba",
+          "goals": 164,
+          "years": "2004–2015",
+          "aliases": [
+            "drogba",
+            "didier drogba",
+            "king didier"
+          ]
+        },
+        {
+          "name": "Roy Bentley",
+          "shortName": "Bentley",
+          "goals": 150,
+          "years": "1948–1956",
+          "aliases": [
+            "roy bentley"
+          ]
+        },
+        {
+          "name": "Peter Osgood",
+          "shortName": "Osgood",
+          "goals": 150,
+          "years": "1964–1979",
+          "aliases": [
+            "osgood",
+            "king of stamford bridge"
+          ]
+        },
+        {
+          "name": "Jimmy Greaves",
+          "shortName": "Greaves",
+          "goals": 132,
+          "years": "1957–1961",
+          "aliases": [
+            "jimmy greaves",
+            "greavsie"
+          ]
+        },
+        {
+          "name": "Eden Hazard",
+          "shortName": "Hazard",
+          "goals": 110,
+          "years": "2012–2019",
+          "aliases": [
+            "hazard",
+            "eden hazard"
+          ]
+        },
+        {
+          "name": "Gianfranco Zola",
+          "shortName": "Zola",
+          "goals": 80,
+          "years": "1996–2003",
+          "aliases": [
+            "zola",
+            "gianfranco zola"
+          ]
+        },
+        {
+          "name": "Eiður Guðjohnsen",
+          "shortName": "Guðjohnsen",
+          "goals": 78,
+          "years": "2000–2006",
+          "aliases": [
+            "gudjohnsen",
+            "eidur gudjohnsen"
+          ]
+        },
+        {
+          "name": "John Terry",
+          "shortName": "Terry",
+          "goals": 67,
+          "years": "1998–2017",
+          "aliases": [
+            "terry",
+            "captain leader legend"
+          ]
+        },
+        {
+          "name": "Willian",
+          "shortName": "Willian",
+          "goals": 63,
+          "years": "2013–2020",
+          "aliases": [
+            "willian"
+          ]
+        },
+        {
+          "name": "Salomon Kalou",
+          "shortName": "Kalou",
+          "goals": 60,
+          "years": "2006–2012",
+          "aliases": [
+            "kalou",
+            "salomon kalou"
+          ]
+        },
+        {
+          "name": "Diego Costa",
+          "shortName": "Costa",
+          "goals": 59,
+          "years": "2014–2017",
+          "aliases": [
+            "diego costa",
+            "costa"
+          ]
+        },
+        {
+          "name": "Nicolas Anelka",
+          "shortName": "Anelka",
+          "goals": 59,
+          "years": "2008–2012",
+          "aliases": [
+            "anelka"
+          ]
+        },
+        {
+          "name": "Fernando Torres",
+          "shortName": "Torres",
+          "goals": 45,
+          "years": "2011–2014",
+          "aliases": [
+            "torres",
+            "el nino"
+          ]
+        },
+        {
+          "name": "Florent Malouda",
+          "shortName": "Malouda",
+          "goals": 45,
+          "years": "2007–2013",
+          "aliases": [
+            "malouda"
+          ]
+        },
+        {
+          "name": "Pedro",
+          "shortName": "Pedro",
+          "goals": 43,
+          "years": "2015–2020",
+          "aliases": [
+            "pedro"
+          ]
+        },
+        {
+          "name": "Oscar",
+          "shortName": "Oscar",
+          "goals": 38,
+          "years": "2012–2017",
+          "aliases": [
+            "oscar"
+          ]
+        },
+        {
+          "name": "Ramires",
+          "shortName": "Ramires",
+          "goals": 34,
+          "years": "2010–2016",
+          "aliases": [
+            "ramires"
+          ]
+        },
+        {
+          "name": "Mason Mount",
+          "shortName": "Mount",
+          "goals": 33,
+          "years": "2019–2023",
+          "aliases": [
+            "mount",
+            "mason mount"
+          ]
+        },
+        {
+          "name": "Juan Mata",
+          "shortName": "Mata",
+          "goals": 32,
+          "years": "2011–2014",
+          "aliases": [
+            "mata",
+            "juan mata"
+          ]
+        },
+        {
+          "name": "Kai Havertz",
+          "shortName": "Havertz",
+          "goals": 32,
+          "years": "2020–2023",
+          "aliases": [
+            "havertz",
+            "kai havertz"
+          ]
+        },
+        {
+          "name": "Cole Palmer",
+          "shortName": "Palmer",
+          "goals": 31,
+          "years": "2023–present",
+          "aliases": [
+            "palmer",
+            "cold palmer",
+            "cole palmer"
+          ]
+        },
+        {
+          "name": "Michael Ballack",
+          "shortName": "Ballack",
+          "goals": 26,
+          "years": "2006–2010",
+          "aliases": [
+            "ballack"
+          ]
+        },
+        {
+          "name": "Michael Essien",
+          "shortName": "Essien",
+          "goals": 25,
+          "years": "2005–2014",
+          "aliases": [
+            "essien",
+            "the bison"
+          ]
+        },
+        {
+          "name": "Hernán Crespo",
+          "shortName": "Crespo",
+          "goals": 25,
+          "years": "2003–2008",
+          "aliases": [
+            "crespo",
+            "hernan crespo"
+          ]
+        },
+        {
+          "name": "Arjen Robben",
+          "shortName": "Robben",
+          "goals": 19,
+          "years": "2004–2007",
+          "aliases": [
+            "robben"
+          ]
+        }
       ]
     },
     {
@@ -309,31 +2285,253 @@
       "badgeColor": "#6CABDD",
       "accentColor": "#1C2C5B",
       "players": [
-        {"name": "Sergio Agüero", "shortName": "Agüero", "goals": 260, "years": "2011–2021", "aliases": ["aguero", "kun aguero", "kun"]},
-        {"name": "Eric Brook", "shortName": "Brook", "goals": 177, "years": "1928–1939", "aliases": ["eric brook"]},
-        {"name": "Tommy Johnson", "shortName": "Johnson", "goals": 166, "years": "1919–1930", "aliases": ["tommy johnson"]},
-        {"name": "Colin Bell", "shortName": "Bell", "goals": 153, "years": "1966–1979", "aliases": ["colin bell", "the king"]},
-        {"name": "Francis Lee", "shortName": "Lee", "goals": 148, "years": "1967–1974", "aliases": ["francis lee"]},
-        {"name": "Raheem Sterling", "shortName": "Sterling", "goals": 131, "years": "2015–2022", "aliases": ["sterling", "raheem sterling"]},
-        {"name": "Kevin De Bruyne", "shortName": "De Bruyne", "goals": 103, "years": "2015–present", "aliases": ["de bruyne", "kdb"]},
-        {"name": "Shaun Goater", "shortName": "Goater", "goals": 103, "years": "1998–2003", "aliases": ["goater", "feed the goat"]},
-        {"name": "Erling Haaland", "shortName": "Haaland", "goals": 101, "years": "2022–present", "aliases": ["haaland", "erling haaland"]},
-        {"name": "Gabriel Jesus", "shortName": "Jesus", "goals": 95, "years": "2017–2022", "aliases": ["jesus", "gabriel jesus"]},
-        {"name": "Phil Foden", "shortName": "Foden", "goals": 88, "years": "2017–present", "aliases": ["foden", "phil foden", "sniper"]},
-        {"name": "Yaya Touré", "shortName": "Touré", "goals": 82, "years": "2010–2018", "aliases": ["yaya toure", "toure"]},
-        {"name": "Riyad Mahrez", "shortName": "Mahrez", "goals": 78, "years": "2018–2023", "aliases": ["mahrez", "riyad mahrez"]},
-        {"name": "David Silva", "shortName": "Silva", "goals": 77, "years": "2010–2020", "aliases": ["david silva", "el mago"]},
-        {"name": "Carlos Tevez", "shortName": "Tevez", "goals": 73, "years": "2009–2013", "aliases": ["tevez", "carlos tevez"]},
-        {"name": "Edin Džeko", "shortName": "Džeko", "goals": 72, "years": "2011–2016", "aliases": ["dzeko", "edin dzeko"]},
-        {"name": "Bernardo Silva", "shortName": "Bernardo", "goals": 67, "years": "2017–present", "aliases": ["bernardo", "bernardo silva"]},
-        {"name": "Ilkay Gündogan", "shortName": "Gündogan", "goals": 60, "years": "2016–present", "aliases": ["gundogan", "ilkay gundogan"]},
-        {"name": "Nicolas Anelka", "shortName": "Anelka", "goals": 45, "years": "2002–2005", "aliases": ["anelka"]},
-        {"name": "Leroy Sané", "shortName": "Sané", "goals": 39, "years": "2016–2020", "aliases": ["sane", "leroy sane"]},
-        {"name": "Julián Álvarez", "shortName": "Álvarez", "goals": 36, "years": "2022–2024", "aliases": ["alvarez", "la arana"]},
-        {"name": "Mario Balotelli", "shortName": "Balotelli", "goals": 30, "years": "2010–2013", "aliases": ["balotelli", "super mario"]},
-        {"name": "Samir Nasri", "shortName": "Nasri", "goals": 27, "years": "2011–2017", "aliases": ["nasri"]},
-        {"name": "Rodri", "shortName": "Rodri", "goals": 26, "years": "2019–present", "aliases": ["rodri", "rodrigo"]},
-        {"name": "Jack Grealish", "shortName": "Grealish", "goals": 14, "years": "2021–present", "aliases": ["grealish", "jack grealish"]}
+        {
+          "name": "Sergio Agüero",
+          "shortName": "Agüero",
+          "goals": 260,
+          "years": "2011–2021",
+          "aliases": [
+            "aguero",
+            "kun aguero",
+            "kun"
+          ]
+        },
+        {
+          "name": "Eric Brook",
+          "shortName": "Brook",
+          "goals": 177,
+          "years": "1928–1939",
+          "aliases": [
+            "eric brook"
+          ]
+        },
+        {
+          "name": "Tommy Johnson",
+          "shortName": "Johnson",
+          "goals": 166,
+          "years": "1919–1930",
+          "aliases": [
+            "tommy johnson"
+          ]
+        },
+        {
+          "name": "Colin Bell",
+          "shortName": "Bell",
+          "goals": 153,
+          "years": "1966–1979",
+          "aliases": [
+            "colin bell",
+            "the king"
+          ]
+        },
+        {
+          "name": "Francis Lee",
+          "shortName": "Lee",
+          "goals": 148,
+          "years": "1967–1974",
+          "aliases": [
+            "francis lee"
+          ]
+        },
+        {
+          "name": "Raheem Sterling",
+          "shortName": "Sterling",
+          "goals": 131,
+          "years": "2015–2022",
+          "aliases": [
+            "sterling",
+            "raheem sterling"
+          ]
+        },
+        {
+          "name": "Kevin De Bruyne",
+          "shortName": "De Bruyne",
+          "goals": 103,
+          "years": "2015–present",
+          "aliases": [
+            "de bruyne",
+            "kdb"
+          ]
+        },
+        {
+          "name": "Shaun Goater",
+          "shortName": "Goater",
+          "goals": 103,
+          "years": "1998–2003",
+          "aliases": [
+            "goater",
+            "feed the goat"
+          ]
+        },
+        {
+          "name": "Erling Haaland",
+          "shortName": "Haaland",
+          "goals": 101,
+          "years": "2022–present",
+          "aliases": [
+            "haaland",
+            "erling haaland"
+          ]
+        },
+        {
+          "name": "Gabriel Jesus",
+          "shortName": "Jesus",
+          "goals": 95,
+          "years": "2017–2022",
+          "aliases": [
+            "jesus",
+            "gabriel jesus"
+          ]
+        },
+        {
+          "name": "Phil Foden",
+          "shortName": "Foden",
+          "goals": 88,
+          "years": "2017–present",
+          "aliases": [
+            "foden",
+            "phil foden",
+            "sniper"
+          ]
+        },
+        {
+          "name": "Yaya Touré",
+          "shortName": "Touré",
+          "goals": 82,
+          "years": "2010–2018",
+          "aliases": [
+            "yaya toure",
+            "toure"
+          ]
+        },
+        {
+          "name": "Riyad Mahrez",
+          "shortName": "Mahrez",
+          "goals": 78,
+          "years": "2018–2023",
+          "aliases": [
+            "mahrez",
+            "riyad mahrez"
+          ]
+        },
+        {
+          "name": "David Silva",
+          "shortName": "Silva",
+          "goals": 77,
+          "years": "2010–2020",
+          "aliases": [
+            "david silva",
+            "el mago"
+          ]
+        },
+        {
+          "name": "Carlos Tevez",
+          "shortName": "Tevez",
+          "goals": 73,
+          "years": "2009–2013",
+          "aliases": [
+            "tevez",
+            "carlos tevez"
+          ]
+        },
+        {
+          "name": "Edin Džeko",
+          "shortName": "Džeko",
+          "goals": 72,
+          "years": "2011–2016",
+          "aliases": [
+            "dzeko",
+            "edin dzeko"
+          ]
+        },
+        {
+          "name": "Bernardo Silva",
+          "shortName": "Bernardo",
+          "goals": 67,
+          "years": "2017–present",
+          "aliases": [
+            "bernardo",
+            "bernardo silva"
+          ]
+        },
+        {
+          "name": "Ilkay Gündogan",
+          "shortName": "Gündogan",
+          "goals": 60,
+          "years": "2016–present",
+          "aliases": [
+            "gundogan",
+            "ilkay gundogan"
+          ]
+        },
+        {
+          "name": "Nicolas Anelka",
+          "shortName": "Anelka",
+          "goals": 45,
+          "years": "2002–2005",
+          "aliases": [
+            "anelka"
+          ]
+        },
+        {
+          "name": "Leroy Sané",
+          "shortName": "Sané",
+          "goals": 39,
+          "years": "2016–2020",
+          "aliases": [
+            "sane",
+            "leroy sane"
+          ]
+        },
+        {
+          "name": "Julián Álvarez",
+          "shortName": "Álvarez",
+          "goals": 36,
+          "years": "2022–2024",
+          "aliases": [
+            "alvarez",
+            "la arana"
+          ]
+        },
+        {
+          "name": "Mario Balotelli",
+          "shortName": "Balotelli",
+          "goals": 30,
+          "years": "2010–2013",
+          "aliases": [
+            "balotelli",
+            "super mario"
+          ]
+        },
+        {
+          "name": "Samir Nasri",
+          "shortName": "Nasri",
+          "goals": 27,
+          "years": "2011–2017",
+          "aliases": [
+            "nasri"
+          ]
+        },
+        {
+          "name": "Rodri",
+          "shortName": "Rodri",
+          "goals": 26,
+          "years": "2019–present",
+          "aliases": [
+            "rodri",
+            "rodrigo"
+          ]
+        },
+        {
+          "name": "Jack Grealish",
+          "shortName": "Grealish",
+          "goals": 14,
+          "years": "2021–present",
+          "aliases": [
+            "grealish",
+            "jack grealish"
+          ]
+        }
       ]
     },
     {
@@ -345,28 +2543,213 @@
       "badgeColor": "#004170",
       "accentColor": "#DA291C",
       "players": [
-        {"name": "Kylian Mbappé", "shortName": "Mbappé", "goals": 256, "years": "2017–2024", "aliases": ["mbappe", "kylian mbappe"]},
-        {"name": "Edinson Cavani", "shortName": "Cavani", "goals": 200, "years": "2013–2020", "aliases": ["cavani", "el matador"]},
-        {"name": "Zlatan Ibrahimović", "shortName": "Ibrahimović", "goals": 156, "years": "2012–2016", "aliases": ["zlatan", "ibrahimovic"]},
-        {"name": "Neymar Jr", "shortName": "Neymar", "goals": 118, "years": "2017–2023", "aliases": ["neymar", "neymar jr"]},
-        {"name": "Pedro Miguel Pauleta", "shortName": "Pauleta", "goals": 109, "years": "2003–2008", "aliases": ["pauleta"]},
-        {"name": "Dominique Rocheteau", "shortName": "Rocheteau", "goals": 100, "years": "1980–1987", "aliases": ["rocheteau"]},
-        {"name": "Mustapha Dahleb", "shortName": "Dahleb", "goals": 98, "years": "1974–1984", "aliases": ["dahleb"]},
-        {"name": "Ángel Di María", "shortName": "Di María", "goals": 92, "years": "2015–2022", "aliases": ["di maria", "angel di maria"]},
-        {"name": "Safet Sušić", "shortName": "Sušić", "goals": 85, "years": "1982–1991", "aliases": ["susic"]},
-        {"name": "Raí", "shortName": "Raí", "goals": 72, "years": "1993–1998", "aliases": ["rai"]},
-        {"name": "George Weah", "shortName": "Weah", "goals": 55, "years": "1992–1995", "aliases": ["weah", "george weah"]},
-        {"name": "Nenê", "shortName": "Nenê", "goals": 48, "years": "2010–2013", "aliases": ["nene"]},
-        {"name": "Lucas Moura", "shortName": "Lucas", "goals": 46, "years": "2013–2018", "aliases": ["lucas moura", "lucas"]},
-        {"name": "Javier Pastore", "shortName": "Pastore", "goals": 45, "years": "2011–2018", "aliases": ["pastore", "el flaco"]},
-        {"name": "Marquinhos", "shortName": "Marquinhos", "goals": 38, "years": "2013–present", "aliases": ["marquinhos"]},
-        {"name": "Mauro Icardi", "shortName": "Icardi", "goals": 38, "years": "2019–2022", "aliases": ["icardi"]},
-        {"name": "Blaise Matuidi", "shortName": "Matuidi", "goals": 33, "years": "2011–2017", "aliases": ["matuidi"]},
-        {"name": "Lionel Messi", "shortName": "Messi", "goals": 32, "years": "2021–2023", "aliases": ["messi", "leo messi"]},
-        {"name": "Ronaldinho Gaúcho", "shortName": "Ronaldinho", "goals": 25, "years": "2001–2003", "aliases": ["ronaldinho"]},
-        {"name": "Thiago Silva", "shortName": "Thiago Silva", "goals": 17, "years": "2012–2020", "aliases": ["thiago silva"]},
-        {"name": "Bradley Barcola", "shortName": "Barcola", "goals": 13, "years": "2023–present", "aliases": ["barcola"]},
-        {"name": "Ousmane Dembélé", "shortName": "Dembélé", "goals": 9, "years": "2023–present", "aliases": ["dembele"]}
+        {
+          "name": "Kylian Mbappé",
+          "shortName": "Mbappé",
+          "goals": 256,
+          "years": "2017–2024",
+          "aliases": [
+            "mbappe",
+            "kylian mbappe"
+          ]
+        },
+        {
+          "name": "Edinson Cavani",
+          "shortName": "Cavani",
+          "goals": 200,
+          "years": "2013–2020",
+          "aliases": [
+            "cavani",
+            "el matador"
+          ]
+        },
+        {
+          "name": "Zlatan Ibrahimović",
+          "shortName": "Ibrahimović",
+          "goals": 156,
+          "years": "2012–2016",
+          "aliases": [
+            "zlatan",
+            "ibrahimovic"
+          ]
+        },
+        {
+          "name": "Neymar Jr",
+          "shortName": "Neymar",
+          "goals": 118,
+          "years": "2017–2023",
+          "aliases": [
+            "neymar",
+            "neymar jr"
+          ]
+        },
+        {
+          "name": "Pedro Miguel Pauleta",
+          "shortName": "Pauleta",
+          "goals": 109,
+          "years": "2003–2008",
+          "aliases": [
+            "pauleta"
+          ]
+        },
+        {
+          "name": "Dominique Rocheteau",
+          "shortName": "Rocheteau",
+          "goals": 100,
+          "years": "1980–1987",
+          "aliases": [
+            "rocheteau"
+          ]
+        },
+        {
+          "name": "Mustapha Dahleb",
+          "shortName": "Dahleb",
+          "goals": 98,
+          "years": "1974–1984",
+          "aliases": [
+            "dahleb"
+          ]
+        },
+        {
+          "name": "Ángel Di María",
+          "shortName": "Di María",
+          "goals": 92,
+          "years": "2015–2022",
+          "aliases": [
+            "di maria",
+            "angel di maria"
+          ]
+        },
+        {
+          "name": "Safet Sušić",
+          "shortName": "Sušić",
+          "goals": 85,
+          "years": "1982–1991",
+          "aliases": [
+            "susic"
+          ]
+        },
+        {
+          "name": "Raí",
+          "shortName": "Raí",
+          "goals": 72,
+          "years": "1993–1998",
+          "aliases": [
+            "rai"
+          ]
+        },
+        {
+          "name": "George Weah",
+          "shortName": "Weah",
+          "goals": 55,
+          "years": "1992–1995",
+          "aliases": [
+            "weah",
+            "george weah"
+          ]
+        },
+        {
+          "name": "Nenê",
+          "shortName": "Nenê",
+          "goals": 48,
+          "years": "2010–2013",
+          "aliases": [
+            "nene"
+          ]
+        },
+        {
+          "name": "Lucas Moura",
+          "shortName": "Lucas",
+          "goals": 46,
+          "years": "2013–2018",
+          "aliases": [
+            "lucas moura",
+            "lucas"
+          ]
+        },
+        {
+          "name": "Javier Pastore",
+          "shortName": "Pastore",
+          "goals": 45,
+          "years": "2011–2018",
+          "aliases": [
+            "pastore",
+            "el flaco"
+          ]
+        },
+        {
+          "name": "Marquinhos",
+          "shortName": "Marquinhos",
+          "goals": 38,
+          "years": "2013–present",
+          "aliases": [
+            "marquinhos"
+          ]
+        },
+        {
+          "name": "Mauro Icardi",
+          "shortName": "Icardi",
+          "goals": 38,
+          "years": "2019–2022",
+          "aliases": [
+            "icardi"
+          ]
+        },
+        {
+          "name": "Blaise Matuidi",
+          "shortName": "Matuidi",
+          "goals": 33,
+          "years": "2011–2017",
+          "aliases": [
+            "matuidi"
+          ]
+        },
+        {
+          "name": "Lionel Messi",
+          "shortName": "Messi",
+          "goals": 32,
+          "years": "2021–2023",
+          "aliases": [
+            "messi",
+            "leo messi"
+          ]
+        },
+        {
+          "name": "Ronaldinho Gaúcho",
+          "shortName": "Ronaldinho",
+          "goals": 25,
+          "years": "2001–2003",
+          "aliases": [
+            "ronaldinho"
+          ]
+        },
+        {
+          "name": "Thiago Silva",
+          "shortName": "Thiago Silva",
+          "goals": 17,
+          "years": "2012–2020",
+          "aliases": [
+            "thiago silva"
+          ]
+        },
+        {
+          "name": "Bradley Barcola",
+          "shortName": "Barcola",
+          "goals": 13,
+          "years": "2023–present",
+          "aliases": [
+            "barcola"
+          ]
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "shortName": "Dembélé",
+          "goals": 9,
+          "years": "2023–present",
+          "aliases": [
+            "dembele"
+          ]
+        }
       ]
     },
     {
@@ -378,33 +2761,267 @@
       "badgeColor": "#000000",
       "accentColor": "#FFFFFF",
       "players": [
-        {"name": "Alessandro Del Piero", "shortName": "Del Piero", "goals": 290, "years": "1993–2012", "aliases": ["del piero", "alex del piero", "pinturicchio"]},
-        {"name": "Giampiero Boniperti", "shortName": "Boniperti", "goals": 179, "years": "1946–1961", "aliases": ["boniperti"]},
-        {"name": "Roberto Bettega", "shortName": "Bettega", "goals": 178, "years": "1969–1983", "aliases": ["bettega"]},
-        {"name": "David Trezeguet", "shortName": "Trezeguet", "goals": 171, "years": "2000–2010", "aliases": ["trezeguet", "trezegol"]},
-        {"name": "Omar Sívori", "shortName": "Sívori", "goals": 167, "years": "1957–1965", "aliases": ["sivori"]},
-        {"name": "Felice Borel", "shortName": "Borel", "goals": 158, "years": "1932–1947", "aliases": ["borel"]},
-        {"name": "Pietro Anastasi", "shortName": "Anastasi", "goals": 130, "years": "1968–1976", "aliases": ["anastasi"]},
-        {"name": "Roberto Baggio", "shortName": "Baggio", "goals": 115, "years": "1990–1995", "aliases": ["baggio", "roberto baggio", "il divin codino"]},
-        {"name": "Paulo Dybala", "shortName": "Dybala", "goals": 115, "years": "2015–2022", "aliases": ["dybala", "la joya"]},
-        {"name": "John Charles", "shortName": "Charles", "goals": 105, "years": "1957–1962", "aliases": ["john charles", "il gigante buono"]},
-        {"name": "Michel Platini", "shortName": "Platini", "goals": 104, "years": "1982–1987", "aliases": ["platini", "michel platini", "le roi"]},
-        {"name": "Cristiano Ronaldo", "shortName": "CR7", "goals": 101, "years": "2018–2021", "aliases": ["ronaldo", "cr7", "cristiano"]},
-        {"name": "Filippo Inzaghi", "shortName": "Inzaghi", "goals": 89, "years": "1997–2001", "aliases": ["inzaghi", "pippo inzaghi"]},
-        {"name": "Fabrizio Ravanelli", "shortName": "Ravanelli", "goals": 68, "years": "1992–1996", "aliases": ["ravanelli", "penna bianca"]},
-        {"name": "Gonzalo Higuaín", "shortName": "Higuaín", "goals": 66, "years": "2016–2020", "aliases": ["higuain", "pipita"]},
-        {"name": "Pavel Nedvěd", "shortName": "Nedvěd", "goals": 65, "years": "2001–2009", "aliases": ["nedved", "pavel nedved"]},
-        {"name": "Álvaro Morata", "shortName": "Morata", "goals": 59, "years": "2014–2022", "aliases": ["morata"]},
-        {"name": "Gianluca Vialli", "shortName": "Vialli", "goals": 53, "years": "1992–1996", "aliases": ["vialli", "gianluca vialli"]},
-        {"name": "Dušan Vlahović", "shortName": "Vlahović", "goals": 48, "years": "2022–present", "aliases": ["vlahovic"]},
-        {"name": "Arturo Vidal", "shortName": "Vidal", "goals": 48, "years": "2011–2015", "aliases": ["vidal", "il guerriero"]},
-        {"name": "Mario Mandžukić", "shortName": "Mandžukić", "goals": 44, "years": "2015–2019", "aliases": ["mandzukic"]},
-        {"name": "Leonardo Bonucci", "shortName": "Bonucci", "goals": 37, "years": "2010–2023", "aliases": ["bonucci"]},
-        {"name": "Giorgio Chiellini", "shortName": "Chiellini", "goals": 36, "years": "2005–2022", "aliases": ["chiellini"]},
-        {"name": "Paul Pogba", "shortName": "Pogba", "goals": 34, "years": "2012–2023", "aliases": ["pogba"]},
-        {"name": "Federico Chiesa", "shortName": "Chiesa", "goals": 32, "years": "2020–2024", "aliases": ["chiesa"]},
-        {"name": "Zinedine Zidane", "shortName": "Zidane", "goals": 31, "years": "1996–2001", "aliases": ["zidane"]},
-        {"name": "Andrea Pirlo", "shortName": "Pirlo", "goals": 19, "years": "2011–2015", "aliases": ["pirlo", "maestro"]}
+        {
+          "name": "Alessandro Del Piero",
+          "shortName": "Del Piero",
+          "goals": 290,
+          "years": "1993–2012",
+          "aliases": [
+            "del piero",
+            "alex del piero",
+            "pinturicchio"
+          ]
+        },
+        {
+          "name": "Giampiero Boniperti",
+          "shortName": "Boniperti",
+          "goals": 179,
+          "years": "1946–1961",
+          "aliases": [
+            "boniperti"
+          ]
+        },
+        {
+          "name": "Roberto Bettega",
+          "shortName": "Bettega",
+          "goals": 178,
+          "years": "1969–1983",
+          "aliases": [
+            "bettega"
+          ]
+        },
+        {
+          "name": "David Trezeguet",
+          "shortName": "Trezeguet",
+          "goals": 171,
+          "years": "2000–2010",
+          "aliases": [
+            "trezeguet",
+            "trezegol"
+          ]
+        },
+        {
+          "name": "Omar Sívori",
+          "shortName": "Sívori",
+          "goals": 167,
+          "years": "1957–1965",
+          "aliases": [
+            "sivori"
+          ]
+        },
+        {
+          "name": "Felice Borel",
+          "shortName": "Borel",
+          "goals": 158,
+          "years": "1932–1947",
+          "aliases": [
+            "borel"
+          ]
+        },
+        {
+          "name": "Pietro Anastasi",
+          "shortName": "Anastasi",
+          "goals": 130,
+          "years": "1968–1976",
+          "aliases": [
+            "anastasi"
+          ]
+        },
+        {
+          "name": "Roberto Baggio",
+          "shortName": "Baggio",
+          "goals": 115,
+          "years": "1990–1995",
+          "aliases": [
+            "baggio",
+            "roberto baggio",
+            "il divin codino"
+          ]
+        },
+        {
+          "name": "Paulo Dybala",
+          "shortName": "Dybala",
+          "goals": 115,
+          "years": "2015–2022",
+          "aliases": [
+            "dybala",
+            "la joya"
+          ]
+        },
+        {
+          "name": "John Charles",
+          "shortName": "Charles",
+          "goals": 105,
+          "years": "1957–1962",
+          "aliases": [
+            "john charles",
+            "il gigante buono"
+          ]
+        },
+        {
+          "name": "Michel Platini",
+          "shortName": "Platini",
+          "goals": 104,
+          "years": "1982–1987",
+          "aliases": [
+            "platini",
+            "michel platini",
+            "le roi"
+          ]
+        },
+        {
+          "name": "Cristiano Ronaldo",
+          "shortName": "CR7",
+          "goals": 101,
+          "years": "2018–2021",
+          "aliases": [
+            "ronaldo",
+            "cr7",
+            "cristiano"
+          ]
+        },
+        {
+          "name": "Filippo Inzaghi",
+          "shortName": "Inzaghi",
+          "goals": 89,
+          "years": "1997–2001",
+          "aliases": [
+            "inzaghi",
+            "pippo inzaghi"
+          ]
+        },
+        {
+          "name": "Fabrizio Ravanelli",
+          "shortName": "Ravanelli",
+          "goals": 68,
+          "years": "1992–1996",
+          "aliases": [
+            "ravanelli",
+            "penna bianca"
+          ]
+        },
+        {
+          "name": "Gonzalo Higuaín",
+          "shortName": "Higuaín",
+          "goals": 66,
+          "years": "2016–2020",
+          "aliases": [
+            "higuain",
+            "pipita"
+          ]
+        },
+        {
+          "name": "Pavel Nedvěd",
+          "shortName": "Nedvěd",
+          "goals": 65,
+          "years": "2001–2009",
+          "aliases": [
+            "nedved",
+            "pavel nedved"
+          ]
+        },
+        {
+          "name": "Álvaro Morata",
+          "shortName": "Morata",
+          "goals": 59,
+          "years": "2014–2022",
+          "aliases": [
+            "morata"
+          ]
+        },
+        {
+          "name": "Gianluca Vialli",
+          "shortName": "Vialli",
+          "goals": 53,
+          "years": "1992–1996",
+          "aliases": [
+            "vialli",
+            "gianluca vialli"
+          ]
+        },
+        {
+          "name": "Dušan Vlahović",
+          "shortName": "Vlahović",
+          "goals": 48,
+          "years": "2022–present",
+          "aliases": [
+            "vlahovic"
+          ]
+        },
+        {
+          "name": "Arturo Vidal",
+          "shortName": "Vidal",
+          "goals": 48,
+          "years": "2011–2015",
+          "aliases": [
+            "vidal",
+            "il guerriero"
+          ]
+        },
+        {
+          "name": "Mario Mandžukić",
+          "shortName": "Mandžukić",
+          "goals": 44,
+          "years": "2015–2019",
+          "aliases": [
+            "mandzukic"
+          ]
+        },
+        {
+          "name": "Leonardo Bonucci",
+          "shortName": "Bonucci",
+          "goals": 37,
+          "years": "2010–2023",
+          "aliases": [
+            "bonucci"
+          ]
+        },
+        {
+          "name": "Giorgio Chiellini",
+          "shortName": "Chiellini",
+          "goals": 36,
+          "years": "2005–2022",
+          "aliases": [
+            "chiellini"
+          ]
+        },
+        {
+          "name": "Paul Pogba",
+          "shortName": "Pogba",
+          "goals": 34,
+          "years": "2012–2023",
+          "aliases": [
+            "pogba"
+          ]
+        },
+        {
+          "name": "Federico Chiesa",
+          "shortName": "Chiesa",
+          "goals": 32,
+          "years": "2020–2024",
+          "aliases": [
+            "chiesa"
+          ]
+        },
+        {
+          "name": "Zinedine Zidane",
+          "shortName": "Zidane",
+          "goals": 31,
+          "years": "1996–2001",
+          "aliases": [
+            "zidane"
+          ]
+        },
+        {
+          "name": "Andrea Pirlo",
+          "shortName": "Pirlo",
+          "goals": 19,
+          "years": "2011–2015",
+          "aliases": [
+            "pirlo",
+            "maestro"
+          ]
+        }
       ]
     },
     {
@@ -416,30 +3033,240 @@
       "badgeColor": "#FB090B",
       "accentColor": "#000000",
       "players": [
-        {"name": "Gunnar Nordahl", "shortName": "Nordahl", "goals": 221, "years": "1949–1956", "aliases": ["nordahl", "il pompiere"]},
-        {"name": "Andriy Shevchenko", "shortName": "Shevchenko", "goals": 175, "years": "1999–2009", "aliases": ["shevchenko", "sheva"]},
-        {"name": "Gianni Rivera", "shortName": "Rivera", "goals": 164, "years": "1960–1979", "aliases": ["rivera", "golden boy"]},
-        {"name": "José Altafini", "shortName": "Altafini", "goals": 161, "years": "1958–1965", "aliases": ["altafini"]},
-        {"name": "Aldo Boffi", "shortName": "Boffi", "goals": 136, "years": "1936–1945", "aliases": ["boffi"]},
-        {"name": "Filippo Inzaghi", "shortName": "Inzaghi", "goals": 126, "years": "2001–2012", "aliases": ["inzaghi", "pippo inzaghi", "superpippo"]},
-        {"name": "Marco van Basten", "shortName": "Van Basten", "goals": 125, "years": "1987–1995", "aliases": ["van basten", "marco van basten"]},
-        {"name": "Kaká", "shortName": "Kaká", "goals": 104, "years": "2003–2014", "aliases": ["kaka", "ricardo kaka"]},
-        {"name": "Pierino Prati", "shortName": "Prati", "goals": 102, "years": "1966–1973", "aliases": ["prati"]},
-        {"name": "Zlatan Ibrahimović", "shortName": "Ibrahimović", "goals": 93, "years": "2010–2023", "aliases": ["zlatan", "ibrahimovic"]},
-        {"name": "Alexandre Pato", "shortName": "Pato", "goals": 63, "years": "2007–2013", "aliases": ["pato", "alexandre pato"]},
-        {"name": "Clarence Seedorf", "shortName": "Seedorf", "goals": 62, "years": "2002–2012", "aliases": ["seedorf"]},
-        {"name": "Rafael Leão", "shortName": "Leão", "goals": 60, "years": "2019–present", "aliases": ["leao", "rafael leao"]},
-        {"name": "George Weah", "shortName": "Weah", "goals": 58, "years": "1995–2000", "aliases": ["weah", "george weah"]},
-        {"name": "Ruud Gullit", "shortName": "Gullit", "goals": 56, "years": "1987–1994", "aliases": ["gullit", "ruud gullit"]},
-        {"name": "Olivier Giroud", "shortName": "Giroud", "goals": 49, "years": "2021–2024", "aliases": ["giroud", "olivier giroud"]},
-        {"name": "Andrea Pirlo", "shortName": "Pirlo", "goals": 41, "years": "2001–2011", "aliases": ["pirlo", "andrea pirlo"]},
-        {"name": "Paolo Maldini", "shortName": "Maldini", "goals": 33, "years": "1984–2009", "aliases": ["maldini", "paolo maldini"]},
-        {"name": "Franco Baresi", "shortName": "Baresi", "goals": 33, "years": "1977–1997", "aliases": ["baresi", "franco baresi"]},
-        {"name": "Robinho", "shortName": "Robinho", "goals": 32, "years": "2010–2015", "aliases": ["robinho"]},
-        {"name": "Theo Hernández", "shortName": "Hernández", "goals": 31, "years": "2019–present", "aliases": ["theo", "theo hernandez"]},
-        {"name": "Jean-Pierre Papin", "shortName": "Papin", "goals": 31, "years": "1992–1994", "aliases": ["papin"]},
-        {"name": "Ronaldinho Gaúcho", "shortName": "Ronaldinho", "goals": 26, "years": "2008–2011", "aliases": ["ronaldinho"]},
-        {"name": "Christian Pulisic", "shortName": "Pulisic", "goals": 22, "years": "2023–present", "aliases": ["pulisic", "captain america"]}
+        {
+          "name": "Gunnar Nordahl",
+          "shortName": "Nordahl",
+          "goals": 221,
+          "years": "1949–1956",
+          "aliases": [
+            "nordahl",
+            "il pompiere"
+          ]
+        },
+        {
+          "name": "Andriy Shevchenko",
+          "shortName": "Shevchenko",
+          "goals": 175,
+          "years": "1999–2009",
+          "aliases": [
+            "shevchenko",
+            "sheva"
+          ]
+        },
+        {
+          "name": "Gianni Rivera",
+          "shortName": "Rivera",
+          "goals": 164,
+          "years": "1960–1979",
+          "aliases": [
+            "rivera",
+            "golden boy"
+          ]
+        },
+        {
+          "name": "José Altafini",
+          "shortName": "Altafini",
+          "goals": 161,
+          "years": "1958–1965",
+          "aliases": [
+            "altafini"
+          ]
+        },
+        {
+          "name": "Aldo Boffi",
+          "shortName": "Boffi",
+          "goals": 136,
+          "years": "1936–1945",
+          "aliases": [
+            "boffi"
+          ]
+        },
+        {
+          "name": "Filippo Inzaghi",
+          "shortName": "Inzaghi",
+          "goals": 126,
+          "years": "2001–2012",
+          "aliases": [
+            "inzaghi",
+            "pippo inzaghi",
+            "superpippo"
+          ]
+        },
+        {
+          "name": "Marco van Basten",
+          "shortName": "Van Basten",
+          "goals": 125,
+          "years": "1987–1995",
+          "aliases": [
+            "van basten",
+            "marco van basten"
+          ]
+        },
+        {
+          "name": "Kaká",
+          "shortName": "Kaká",
+          "goals": 104,
+          "years": "2003–2014",
+          "aliases": [
+            "kaka",
+            "ricardo kaka"
+          ]
+        },
+        {
+          "name": "Pierino Prati",
+          "shortName": "Prati",
+          "goals": 102,
+          "years": "1966–1973",
+          "aliases": [
+            "prati"
+          ]
+        },
+        {
+          "name": "Zlatan Ibrahimović",
+          "shortName": "Ibrahimović",
+          "goals": 93,
+          "years": "2010–2023",
+          "aliases": [
+            "zlatan",
+            "ibrahimovic"
+          ]
+        },
+        {
+          "name": "Alexandre Pato",
+          "shortName": "Pato",
+          "goals": 63,
+          "years": "2007–2013",
+          "aliases": [
+            "pato",
+            "alexandre pato"
+          ]
+        },
+        {
+          "name": "Clarence Seedorf",
+          "shortName": "Seedorf",
+          "goals": 62,
+          "years": "2002–2012",
+          "aliases": [
+            "seedorf"
+          ]
+        },
+        {
+          "name": "Rafael Leão",
+          "shortName": "Leão",
+          "goals": 60,
+          "years": "2019–present",
+          "aliases": [
+            "leao",
+            "rafael leao"
+          ]
+        },
+        {
+          "name": "George Weah",
+          "shortName": "Weah",
+          "goals": 58,
+          "years": "1995–2000",
+          "aliases": [
+            "weah",
+            "george weah"
+          ]
+        },
+        {
+          "name": "Ruud Gullit",
+          "shortName": "Gullit",
+          "goals": 56,
+          "years": "1987–1994",
+          "aliases": [
+            "gullit",
+            "ruud gullit"
+          ]
+        },
+        {
+          "name": "Olivier Giroud",
+          "shortName": "Giroud",
+          "goals": 49,
+          "years": "2021–2024",
+          "aliases": [
+            "giroud",
+            "olivier giroud"
+          ]
+        },
+        {
+          "name": "Andrea Pirlo",
+          "shortName": "Pirlo",
+          "goals": 41,
+          "years": "2001–2011",
+          "aliases": [
+            "pirlo",
+            "andrea pirlo"
+          ]
+        },
+        {
+          "name": "Paolo Maldini",
+          "shortName": "Maldini",
+          "goals": 33,
+          "years": "1984–2009",
+          "aliases": [
+            "maldini",
+            "paolo maldini"
+          ]
+        },
+        {
+          "name": "Franco Baresi",
+          "shortName": "Baresi",
+          "goals": 33,
+          "years": "1977–1997",
+          "aliases": [
+            "baresi",
+            "franco baresi"
+          ]
+        },
+        {
+          "name": "Robinho",
+          "shortName": "Robinho",
+          "goals": 32,
+          "years": "2010–2015",
+          "aliases": [
+            "robinho"
+          ]
+        },
+        {
+          "name": "Theo Hernández",
+          "shortName": "Hernández",
+          "goals": 31,
+          "years": "2019–present",
+          "aliases": [
+            "theo",
+            "theo hernandez"
+          ]
+        },
+        {
+          "name": "Jean-Pierre Papin",
+          "shortName": "Papin",
+          "goals": 31,
+          "years": "1992–1994",
+          "aliases": [
+            "papin"
+          ]
+        },
+        {
+          "name": "Ronaldinho Gaúcho",
+          "shortName": "Ronaldinho",
+          "goals": 26,
+          "years": "2008–2011",
+          "aliases": [
+            "ronaldinho"
+          ]
+        },
+        {
+          "name": "Christian Pulisic",
+          "shortName": "Pulisic",
+          "goals": 22,
+          "years": "2023–present",
+          "aliases": [
+            "pulisic",
+            "captain america"
+          ]
+        }
       ]
     },
     {
@@ -451,31 +3278,259 @@
       "badgeColor": "#010E80",
       "accentColor": "#000000",
       "players": [
-        {"name": "Giuseppe Meazza", "shortName": "Meazza", "goals": 284, "years": "1927–1947", "aliases": ["meazza", "giuseppe meazza", "peppino"]},
-        {"name": "Alessandro Altobelli", "shortName": "Altobelli", "goals": 209, "years": "1977–1988", "aliases": ["altobelli", "spillo"]},
-        {"name": "Roberto Boninsegna", "shortName": "Boninsegna", "goals": 171, "years": "1969–1976", "aliases": ["boninsegna", "bonimba"]},
-        {"name": "Sandro Mazzola", "shortName": "Mazzola", "goals": 160, "years": "1961–1977", "aliases": ["mazzola", "sandro mazzola"]},
-        {"name": "István Nyers", "shortName": "Nyers", "goals": 133, "years": "1948–1954", "aliases": ["nyers"]},
-        {"name": "Lautaro Martínez", "shortName": "Lautaro", "goals": 133, "years": "2018–present", "aliases": ["lautaro", "el toro", "martinez"]},
-        {"name": "Mauro Icardi", "shortName": "Icardi", "goals": 124, "years": "2013–2019", "aliases": ["icardi", "mauro icardi"]},
-        {"name": "Christian Vieri", "shortName": "Vieri", "goals": 123, "years": "1999–2005", "aliases": ["vieri", "bobo", "bobo vieri"]},
-        {"name": "Mario Corso", "shortName": "Corso", "goals": 94, "years": "1957–1973", "aliases": ["corso", "mario corso"]},
-        {"name": "Romelu Lukaku", "shortName": "Lukaku", "goals": 78, "years": "2019–2023", "aliases": ["lukaku", "big rom"]},
-        {"name": "Diego Milito", "shortName": "Milito", "goals": 75, "years": "2009–2014", "aliases": ["milito", "il principe"]},
-        {"name": "Julio Cruz", "shortName": "Cruz", "goals": 75, "years": "2003–2009", "aliases": ["cruz", "el jardinero"]},
-        {"name": "Adriano Leite Ribeiro", "shortName": "Adriano", "goals": 74, "years": "2001–2009", "aliases": ["adriano", "l'imperatore", "the emperor"]},
-        {"name": "Álvaro Recoba", "shortName": "Recoba", "goals": 72, "years": "1997–2008", "aliases": ["recoba", "el chino"]},
-        {"name": "Zlatan Ibrahimović", "shortName": "Ibrahimović", "goals": 66, "years": "2006–2009", "aliases": ["zlatan", "ibrahimovic"]},
-        {"name": "Ronaldo Nazário", "shortName": "R9", "goals": 59, "years": "1997–2002", "aliases": ["r9", "el fenomeno", "ronaldo nazario"]},
-        {"name": "Samuel Eto'o", "shortName": "Eto'o", "goals": 53, "years": "2009–2011", "aliases": ["etoo", "samuel etoo"]},
-        {"name": "Esteban Cambiasso", "shortName": "Cambiasso", "goals": 51, "years": "2004–2014", "aliases": ["cambiasso", "cuchu"]},
-        {"name": "Dejan Stanković", "shortName": "Stanković", "goals": 42, "years": "2004–2013", "aliases": ["stankovic", "dejan stankovic", "drago"]},
-        {"name": "Youri Djorkaeff", "shortName": "Djorkaeff", "goals": 39, "years": "1996–1999", "aliases": ["djorkaeff"]},
-        {"name": "Hakan Çalhanoğlu", "shortName": "Çalhanoğlu", "goals": 30, "years": "2021–present", "aliases": ["calhanoglu", "hakan"]},
-        {"name": "Nicolò Barella", "shortName": "Barella", "goals": 23, "years": "2019–present", "aliases": ["barella"]},
-        {"name": "Wesley Sneijder", "shortName": "Sneijder", "goals": 22, "years": "2009–2013", "aliases": ["sneijder", "wesley sneijder"]},
-        {"name": "Javier Zanetti", "shortName": "Zanetti", "goals": 21, "years": "1995–2014", "aliases": ["zanetti", "il capitano"]},
-        {"name": "Marcus Thuram", "shortName": "Thuram", "goals": 20, "years": "2023–present", "aliases": ["thuram", "marcus thuram"]}
+        {
+          "name": "Giuseppe Meazza",
+          "shortName": "Meazza",
+          "goals": 284,
+          "years": "1927–1947",
+          "aliases": [
+            "meazza",
+            "giuseppe meazza",
+            "peppino"
+          ]
+        },
+        {
+          "name": "Alessandro Altobelli",
+          "shortName": "Altobelli",
+          "goals": 209,
+          "years": "1977–1988",
+          "aliases": [
+            "altobelli",
+            "spillo"
+          ]
+        },
+        {
+          "name": "Roberto Boninsegna",
+          "shortName": "Boninsegna",
+          "goals": 171,
+          "years": "1969–1976",
+          "aliases": [
+            "boninsegna",
+            "bonimba"
+          ]
+        },
+        {
+          "name": "Sandro Mazzola",
+          "shortName": "Mazzola",
+          "goals": 160,
+          "years": "1961–1977",
+          "aliases": [
+            "mazzola",
+            "sandro mazzola"
+          ]
+        },
+        {
+          "name": "István Nyers",
+          "shortName": "Nyers",
+          "goals": 133,
+          "years": "1948–1954",
+          "aliases": [
+            "nyers"
+          ]
+        },
+        {
+          "name": "Lautaro Martínez",
+          "shortName": "Lautaro",
+          "goals": 133,
+          "years": "2018–present",
+          "aliases": [
+            "lautaro",
+            "el toro",
+            "martinez"
+          ]
+        },
+        {
+          "name": "Mauro Icardi",
+          "shortName": "Icardi",
+          "goals": 124,
+          "years": "2013–2019",
+          "aliases": [
+            "icardi",
+            "mauro icardi"
+          ]
+        },
+        {
+          "name": "Christian Vieri",
+          "shortName": "Vieri",
+          "goals": 123,
+          "years": "1999–2005",
+          "aliases": [
+            "vieri",
+            "bobo",
+            "bobo vieri"
+          ]
+        },
+        {
+          "name": "Mario Corso",
+          "shortName": "Corso",
+          "goals": 94,
+          "years": "1957–1973",
+          "aliases": [
+            "corso",
+            "mario corso"
+          ]
+        },
+        {
+          "name": "Romelu Lukaku",
+          "shortName": "Lukaku",
+          "goals": 78,
+          "years": "2019–2023",
+          "aliases": [
+            "lukaku",
+            "big rom"
+          ]
+        },
+        {
+          "name": "Diego Milito",
+          "shortName": "Milito",
+          "goals": 75,
+          "years": "2009–2014",
+          "aliases": [
+            "milito",
+            "il principe"
+          ]
+        },
+        {
+          "name": "Julio Cruz",
+          "shortName": "Cruz",
+          "goals": 75,
+          "years": "2003–2009",
+          "aliases": [
+            "cruz",
+            "el jardinero"
+          ]
+        },
+        {
+          "name": "Adriano Leite Ribeiro",
+          "shortName": "Adriano",
+          "goals": 74,
+          "years": "2001–2009",
+          "aliases": [
+            "adriano",
+            "l'imperatore",
+            "the emperor"
+          ]
+        },
+        {
+          "name": "Álvaro Recoba",
+          "shortName": "Recoba",
+          "goals": 72,
+          "years": "1997–2008",
+          "aliases": [
+            "recoba",
+            "el chino"
+          ]
+        },
+        {
+          "name": "Zlatan Ibrahimović",
+          "shortName": "Ibrahimović",
+          "goals": 66,
+          "years": "2006–2009",
+          "aliases": [
+            "zlatan",
+            "ibrahimovic"
+          ]
+        },
+        {
+          "name": "Ronaldo Nazário",
+          "shortName": "R9",
+          "goals": 59,
+          "years": "1997–2002",
+          "aliases": [
+            "r9",
+            "el fenomeno",
+            "ronaldo nazario"
+          ]
+        },
+        {
+          "name": "Samuel Eto'o",
+          "shortName": "Eto'o",
+          "goals": 53,
+          "years": "2009–2011",
+          "aliases": [
+            "etoo",
+            "samuel etoo"
+          ]
+        },
+        {
+          "name": "Esteban Cambiasso",
+          "shortName": "Cambiasso",
+          "goals": 51,
+          "years": "2004–2014",
+          "aliases": [
+            "cambiasso",
+            "cuchu"
+          ]
+        },
+        {
+          "name": "Dejan Stanković",
+          "shortName": "Stanković",
+          "goals": 42,
+          "years": "2004–2013",
+          "aliases": [
+            "stankovic",
+            "dejan stankovic",
+            "drago"
+          ]
+        },
+        {
+          "name": "Youri Djorkaeff",
+          "shortName": "Djorkaeff",
+          "goals": 39,
+          "years": "1996–1999",
+          "aliases": [
+            "djorkaeff"
+          ]
+        },
+        {
+          "name": "Hakan Çalhanoğlu",
+          "shortName": "Çalhanoğlu",
+          "goals": 30,
+          "years": "2021–present",
+          "aliases": [
+            "calhanoglu",
+            "hakan"
+          ]
+        },
+        {
+          "name": "Nicolò Barella",
+          "shortName": "Barella",
+          "goals": 23,
+          "years": "2019–present",
+          "aliases": [
+            "barella"
+          ]
+        },
+        {
+          "name": "Wesley Sneijder",
+          "shortName": "Sneijder",
+          "goals": 22,
+          "years": "2009–2013",
+          "aliases": [
+            "sneijder",
+            "wesley sneijder"
+          ]
+        },
+        {
+          "name": "Javier Zanetti",
+          "shortName": "Zanetti",
+          "goals": 21,
+          "years": "1995–2014",
+          "aliases": [
+            "zanetti",
+            "il capitano"
+          ]
+        },
+        {
+          "name": "Marcus Thuram",
+          "shortName": "Thuram",
+          "goals": 20,
+          "years": "2023–present",
+          "aliases": [
+            "thuram",
+            "marcus thuram"
+          ]
+        }
       ]
     }
   ]

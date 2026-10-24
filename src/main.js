@@ -512,21 +512,16 @@ class GoalRoyaleApp {
         return;
       }
 
-      const activePlayer = game.getActivePlayer();
-      const currentScore = activePlayer ? activePlayer.score : 0;
-
       dropdown.innerHTML = this.currentSuggestions
         .map((p, idx) => {
-          const willBust = p.goals > currentScore;
           return `
           <div class="autocomplete-item" data-idx="${idx}">
             <div class="item-player-info">
               <span class="item-player-name">${p.name} ${p.shortName !== p.name ? `(${p.shortName})` : ''}</span>
-              <span class="item-player-years">${p.years}</span>
+              <span class="item-player-years">${p.years || 'Official Record'}</span>
             </div>
-            <div class="item-goals-pill ${willBust ? 'warning-bust' : ''}">
-              ${willBust ? '⚠️ ' : '⚽ '}${p.goals} Goals
-              ${willBust ? '<span style="font-size: 9px; margin-left: 2px;">(BUST)</span>' : ''}
+            <div class="item-select-badge">
+              <span>PLAY ⚽</span>
             </div>
           </div>
         `;

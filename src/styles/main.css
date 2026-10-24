@@ -903,22 +903,28 @@ input:checked + .slider-toggle:before {
   color: #94a3b8;
 }
 
-.item-goals-pill {
+.item-select-badge {
   font-family: var(--font-arcade);
-  font-size: 16px;
-  padding: 4px 12px;
+  font-size: 13px;
+  padding: 6px 14px;
   border-radius: var(--radius-sm);
-  background: #059669;
+  background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
+  border: 1px solid #60a5fa;
   color: #fff;
-  box-shadow: 0 2px 0 #047857;
+  box-shadow: 0 3px 0 #1e3a8a;
   display: flex;
   align-items: center;
   gap: 4px;
+  letter-spacing: 0.5px;
+  transition: transform 0.15s ease;
 }
 
-.item-goals-pill.warning-bust {
-  background: #dc2626;
-  box-shadow: 0 2px 0 #991b1b;
+.autocomplete-item:hover .item-select-badge,
+.autocomplete-item.focused .item-select-badge {
+  background: linear-gradient(180deg, #10b981 0%, #047857 100%);
+  border-color: #34d399;
+  box-shadow: 0 3px 0 #065f46;
+  transform: scale(1.05);
 }
 
 /* Console Actions Row */
